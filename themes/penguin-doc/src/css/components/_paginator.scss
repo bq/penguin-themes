@@ -1,0 +1,30 @@
+/*------------------------------------*\
+    #PAGINATOR-THEME
+\*------------------------------------*/
+
+.paginator {}
+
+    .paginator__item {}
+
+        .paginator__link {
+        	@include font-size($paginator-font-size);
+            @include transition($paginator-transition);
+            font-weight: $paginator-item-font-weight;
+            background-color: $paginator-item-bg-color;
+            color: $paginator-item-color;
+            padding: $paginator-item-padding;
+
+            &:hover, &:focus {
+            	background-color: $paginator-item-hover-bg-color;
+            }
+
+            &:active {
+            	background-color: $paginator-item-active-bg-color;
+            }
+
+            .paginator__item--selected & {
+                color: $paginator-item-selected-color;
+                background-color: $paginator-item-selected-bg-color;
+            }
+
+        }

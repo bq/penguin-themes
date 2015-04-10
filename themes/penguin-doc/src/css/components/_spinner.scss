@@ -1,0 +1,72 @@
+/*------------------------------------*\
+    #SPINNER-THEME
+\*------------------------------------*/
+
+/* :not(:required) hides this rule from IE9 and below */
+.spinner__element--circle:not(:required) {
+    -webkit-animation: spinner 1500ms infinite linear;
+    -moz-animation: spinner 1500ms infinite linear;
+    -ms-animation: spinner 1500ms infinite linear;
+    -o-animation: spinner 1500ms infinite linear;
+    animation: spinner 1500ms infinite linear;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+    border-radius: 0.5em;
+    -webkit-box-shadow: $spinner-element-bg 1.5em 0 0 0, $spinner-element-bg 1.1em 1.1em 0 0, $spinner-element-bg 0 1.5em 0 0, $spinner-element-bg -1.1em 1.1em 0 0, $spinner-element-bg -1.5em 0 0 0, $spinner-element-bg -1.1em -1.1em 0 0, $spinner-element-bg 0 -1.5em 0 0, $spinner-element-bg 1.1em -1.1em 0 0;
+    -moz-box-shadow: $spinner-element-bg 1.5em 0 0 0, $spinner-element-bg 1.1em 1.1em 0 0, $spinner-element-bg 0 1.5em 0 0, $spinner-element-bg -1.1em 1.1em 0 0, $spinner-element-bg -1.5em 0 0 0, $spinner-element-bg -1.1em -1.1em 0 0, $spinner-element-bg 0 -1.5em 0 0, $spinner-element-bg 1.1em -1.1em 0 0;
+    box-shadow: $spinner-element-bg 1.5em 0 0 0, $spinner-element-bg 1.1em 1.1em 0 0, $spinner-element-bg 0 1.5em 0 0, $spinner-element-bg -1.1em 1.1em 0 0, $spinner-element-bg -1.5em 0 0 0, $spinner-element-bg -1.1em -1.1em 0 0, $spinner-element-bg 0 -1.5em 0 0, $spinner-element-bg 1.1em -1.1em 0 0;
+    display: inline-block;
+    font-size: 10px;
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    text-indent: 100%;
+}
+
+@-webkit-keyframes tp-rotateplane {
+    0% {
+        -webkit-transform: perspective(120px);
+    }
+    50% {
+        -webkit-transform: perspective(120px) rotateY(180deg);
+    }
+    100% {
+        -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg);
+    }
+}
+
+
+@keyframes tp-rotateplane {
+    0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+}
+
+
+.spinner__element--square {
+    width: 40px;
+    height: 40px;
+    background: url(http://i.imgur.com/ICOsAmq.gif) no-repeat center center;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+    margin-top: -20px;
+    margin-left: -20px;
+    -webkit-animation: tp-rotateplane 1.2s infinite ease-in-out;
+    animation: tp-rotateplane 1.2s infinite ease-in-out;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font-size: 0;
+}

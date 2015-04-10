@@ -1,0 +1,45 @@
+/*------------------------------------*\
+    #PANEL-THEME
+\*------------------------------------*/
+
+.panel {
+    border: $panel-border;
+
+    [data-rel="dropdown"] {
+        color: $panel-dropdown-close-color;
+        height: $icon-size-svg;
+        position: absolute;
+        top: $panel-dropdown-close-top;
+        right: $panel-title-padding;
+        width: $icon-size-svg;
+        @include transition(all 0.2s  $transition-timing);
+
+
+        @include rotate($panel-dropdown-close-rotate);
+
+
+
+    }
+
+    .dropdown--selected {
+
+        [data-rel="dropdown"] {
+            @include rotate($panel-dropdown-close-rotate-hover);
+        }
+
+    }
+
+}
+
+    .panel__title {
+        font-size: $panel-title-font-size;
+        padding: $panel-title-padding;
+        color: $panel-title-color;
+        background-color: $panel-title-bg-color;
+        text-transform: $panel-title-transform;
+    }
+
+    .panel__content {
+        font-size: $panel-content-font-size;
+        padding: $panel-content-padding;
+    }

@@ -1,0 +1,32 @@
+/*------------------------------------*\
+    #TEXT-THEME
+\*------------------------------------*/
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 1em;
+}
+
+.text {
+
+    p, ul, ol {
+        @include margin($line-height-base, $font-size-base);
+    }
+
+    ul li {
+        list-style-type: disc;
+    }
+
+    ol li {
+        list-style-type: decimal;
+    }
+
+    li li {
+        margin-top: 1em;
+        margin-left: 1em;
+    }
+
+    p, li {
+        @include margin($line-height-base, $font-size-base);
+    }
+
+}

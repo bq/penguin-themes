@@ -1,0 +1,53 @@
+/*------------------------------------*\
+    #TAB-THEME
+\*------------------------------------*/
+
+.tab {}
+
+    .tab__block {
+
+        .tab--stacked & {
+            width: $tab-block-width;
+        }
+
+    }
+
+        .tab__block__item {}
+
+            .tab__block__link {
+                background-color: $tab-item-bg-color;
+                color: $tab-item-color;
+                text-transform: uppercase;
+                padding: $tab-item-padding;
+
+                &:hover, &:focus {
+                    color: $tab-item-hover-color;
+                    background: $tab-item-hover-bg-color;
+                }
+
+                &:active {
+                    background-color: $tab-item-active-bg-color;
+                }
+
+                .tab__block__item--selected & {
+                    color: $tab-item-selected-color;
+                    background-color: $tab-item-selected-bg-color;
+                }
+
+                .tab__block__item--lead & {
+                    background-color: $tab-item-lead-bg-color;
+                }
+
+            }
+
+    .tab__content {
+        @include font-size($tab-content-font-size);
+        padding: $tab-content-padding;
+        background: $tab-content-bg-color;
+        border: $tab-content-border;
+
+        .tab--stacked & {
+            width: $tab-content-width;
+        }
+
+    }

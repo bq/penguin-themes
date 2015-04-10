@@ -1,0 +1,43 @@
+/*------------------------------------*\
+    #ICON-THEME
+\*------------------------------------*/
+
+.icon {
+    display: inline-block;
+    color: $icon-color;
+
+    svg {
+        fill: $icon-color;
+        height: $icon-size-svg;
+        vertical-align: middle;
+        width: $icon-size-svg;
+    }
+
+}
+
+.icon--invert {
+
+    color: $icon-color-variant;
+
+    svg {
+        fill: $icon-color-variant;
+    }
+
+}
+
+.icon--close {
+    background: url('/assets/svg/icon-close.svg');
+    background-size: 100% 100%;
+    height: $icon-size-svg;
+    width: $icon-size-svg;
+}
+
+
+.icon-text {
+    padding-left: $icon-text-padding + 0.2;
+
+    .icon {
+        left: 0;
+    }
+
+}

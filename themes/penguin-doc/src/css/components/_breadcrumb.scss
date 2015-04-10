@@ -1,0 +1,15 @@
+/*------------------------------------*\
+    #BREADCRUMB-THEME
+\*------------------------------------*/
+
+.breadcrumb {}
+    .breadcrumb__menu__item {
+        margin-right: 0.313em;
+
+        &:after {
+            content: ' » ';
+            margin-left: 0.313em;
+        }
+
+    }
+

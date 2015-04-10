@@ -1,0 +1,10 @@
+.DS_Store
+.tmp
+.sass-cache
+node_modules
+bower_components
+themes/*/dist/*
+Gemfile.lock
+_site
+*.log
+.idea

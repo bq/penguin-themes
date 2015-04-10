@@ -1,0 +1,379 @@
+// /*------------------------------------*\
+//         #ALERT
+// \*------------------------------------*/
+
+$styles-alert                        : true;
+
+// base
+$alert-padding                       : 0.750em !default;
+$alert-border                        : 1px solid !default;
+$alert-margin                        : 0 0 1em !default;
+
+// types
+$alert-success-bg                    : #fff !default;
+$alert-success-color                 : #67B646 !default;
+$alert-success-border-color          : #67B646 !default;
+
+$alert-info-bg                       : #fff !default;
+$alert-info-color                    : #4183C4 !default;
+$alert-info-border-color             : #4183C4 !default;
+
+$alert-warning-bg                    : #fff !default;
+$alert-warning-color                 : #F93 !default;
+$alert-warning-border-color          : #F93 !default;
+
+$alert-error-bg                      : #fff !default;
+$alert-error-color                   : #BD2C00 !default;
+$alert-error-border-color            : #BD2C00 !default;
+
+
+
+
+
+// /*------------------------------------*\
+//         #BUTTON
+// \*------------------------------------*/
+
+$styles-button                       : true;
+
+// base
+$button-font-size                    : 15 !default;
+$button-font-weight                  : normal !default;
+$button-events                       : true !default;
+$button-padding                      : rem(10) rem(18) !default;
+$button-transition                   : background-color $transition-duration $transition-timing !default;
+$button-radius                       : 4px !default;
+$button-border                       : none !default;
+$button-text-decoration              : none !default;
+$button-group-lateral-margin         : rem(6) !default;
+
+// types
+$button-primary-bg                   : $brand-primary !default;
+$button-primary-color                : $brand-primary-text !default;
+$button-primary-border               : $button-border !default;
+$button-primary-border-color         : $brand-primary !default;
+
+$button-secondary-bg                 : $brand-secondary !default;
+$button-secondary-color              : $brand-secondary-text !default;
+$button-secondary-border             : $button-border !default;
+$button-secondary-border-color       : $brand-secondary !default;
+
+$button-disabled-bg                  : #eeeeee !default;
+$button-disabled-color               : #aaa !default;
+$button-disabled-border              : 1px solid !default;
+$button-disabled-border-color        : #aaa !default;
+
+// events
+$button-primary-bg-hover             : lighten($button-primary-bg, 15%) !default;
+$button-primary-bg-active            : lighten($button-primary-bg, 25%) !default;
+$button-primary-color-hover          : $button-primary-color !default;
+$button-primary-border-color-hover   : none !default;
+
+$button-secondary-bg-hover           : lighten($button-secondary-bg, 15%) !default;
+$button-secondary-bg-active          : lighten($button-secondary-bg, 25%) !default;
+$button-secondary-color-hover        : $button-primary-color !default;
+$button-secondary-border-color-hover : none !default;
+
+
+
+
+
+// /*------------------------------------*\
+//         #NAVIGATION
+// \*------------------------------------*/
+
+$styles-navigation                   : true;
+
+// base
+$nav-fixed-x                         : (top, 0);
+$nav-fixed-y                         : (left, 0);
+$nav-padding                         : 0 !default;
+$nav-font-size                       : 14 !default;
+$nav-item-font-weight                : normal !default;
+$nav-item-padding                    : 1em !default;
+$nav-menu-transition                 : background-color $transition-duration $transition-timing !default;
+$nav-submenu-transition              : background-color $transition-duration $transition-timing !default;
+
+// format
+$nav-bg-color                        : transparent !default;
+$nav-item-color                      : $brand-primary-text !default;
+$nav-item-bg-color                   : $brand-primary !default;
+$nav-item-lead-bg-color              : darken($nav-item-bg-color, 15%) !default;
+$nav-item-selected-color             : $brand-secondary-text !default;
+$nav-item-selected-bg-color          : $brand-secondary !default;
+
+// events
+$nav-item-hover-bg-color             : darken($nav-item-bg-color, 10%) !default;
+$nav-item-active-bg-color            : lighten($nav-item-bg-color, 5%) !default;
+$nav-submenu-bg-color                : lighten($nav-item-hover-bg-color, 13%) !default;
+
+
+
+
+
+// /*------------------------------------*\
+//         #TAB
+// \*------------------------------------*/
+
+$styles-tab                          : true;
+
+// base
+$tab-item-font-size                  : 13 !default;
+$tab-item-padding                    : 1em !default;
+$tab-content-padding                 : 1em !default;
+$tab-content-font-size               : 14 !default;
+$tab-content-width                   : 70% !default;
+$tab-block-width                     : 30% !default;
+
+// format
+$tab-item-bg-color                   : $brand-primary !default;
+$tab-item-color                      : white !default;
+$tab-item-lead-bg-color              : darken($tab-item-bg-color, 15%) !default;
+$tab-item-selected-color             : $brand-secondary-text !default;
+$tab-item-selected-bg-color          : $brand-secondary !default;
+$tab-content-border                  : 1px solid $tab-item-selected-bg-color !default;
+$tab-content-bg-color                : #fafafa !default;
+
+//events
+$tab-item-hover-color                : $tab-item-color !default;
+$tab-item-hover-bg-color             : $brand-primary !default;
+$tab-item-active-bg-color            : initial !default;
+
+
+
+
+
+// /*------------------------------------*\
+//         #BREADCRUMB
+// \*------------------------------------*/
+
+$styles-breadcrumb                   : true;
+
+
+
+
+
+// /*------------------------------------*\
+//         #TABLE
+// \*------------------------------------*/
+
+$styles-table                        : true;
+
+// base
+$table-font-size                     : 16 !default;
+$table-padding                       : 0.8em !default;
+$thead-align                         : left !default;
+$tbody-align                         : left !default;
+$tfoot-align                         : right !default;
+$tfoot-font-size                     : 13 !default;
+$thead-font-weight                   : bold !default;
+
+// format
+$thead-color                         : $brand-primary-text !default;
+$thead-bg-color                      : $brand-primary !default;
+$tfoot-bg-color                      : #fafaf1;
+$tfoot-border-color                  : #F0F0C0;
+$table-even-bg-color                 : #fafaf1;
+$table-odd-bg-color                  : inherit;
+
+// events
+$table-hover-bg-color                : $brand-secondary !default;
+$table-hover-color                   : $brand-secondary-text !default;
+$table-hover-transition				 : none;
+
+
+
+
+
+// /*------------------------------------*\
+//         #FORM
+// \*------------------------------------*/
+
+$styles-form                         : true;
+
+// base
+$input-font-size                     : 14 !default;
+$input-padding                       : 0.8em !default;
+$input-margin-bottom                 : 1em !default;
+$input-border-radius                 : 0.4em !default;
+$input-border-style                  : 1px solid !default;
+
+// format
+$input-bg-color                      : #fdfdfd !default;
+$input-border-color                  : darken($brand-primary, 10%) !default;
+$input-color                         : $brand-primary !default;
+$input-border                        : $input-border-style $input-border-color !default;
+$input-icon-position                 : right !default;
+
+// events
+$input-color-focus                   : darken($input-color, 10%) !default;
+$input-bg-color-focus                : darken($input-bg-color, 2%) !default;
+$input-border-color-focus            : darken($input-border-color, 10%) !default;
+
+// Warnings
+$msg-font-size                       : 12 !default;
+$msg-font-weight                     : bold !default;
+$msg-base-color                      : #dddddd !default;
+
+
+// icons
+$input-icon-color                    : $brand-primary !default;
+$input-icon-width                    : em(32, $input-font-size) !default;
+$input-icon-height                   : em(32, $input-font-size) !default;
+$input-icon-padding-right            : em(40, $input-font-size) !default;
+
+
+
+// /*------------------------------------*\
+//         #ICON
+// \*------------------------------------*/
+
+$styles-icon                         : true;
+
+// colors
+$icon-color                          : white !default;
+$icon-color-variant                  : #333 !default;
+
+// size
+$icon-size-svg                       : rem(28) !default;
+
+// text
+$icon-text-padding                   : rem(30) !default;
+
+
+
+
+
+// /*------------------------------------*\
+//         #MODAL
+// \*------------------------------------*/
+
+$styles-modal                        : true;
+$modal-backdrop-bg                   : rgba(51, 51, 51, 0.75);
+
+// base
+$modal-position                      : center !default;
+$modal-dialog-padding                : 10 !default;
+$modal-inner-padding                 : 20 !default;
+$modal-content-border-radius         : initial !default;
+
+// format
+$modal-content-bg                    : white !default;
+
+
+
+
+
+// /*------------------------------------*\
+//         #BANNER
+// \*------------------------------------*/
+
+$styles-banner                       : true;
+
+// base
+$banner-item-padding                 : 0 1% !default;
+$banner-align                        : center !default;
+
+
+
+
+
+// /*------------------------------------*\
+//         #SPINNER
+// \*------------------------------------*/
+
+$styles-spinner                      : true;
+$spinner-backdrop-bg                 : rgba(255, 255, 255, 0.75);
+
+// format
+$spinner-element-bg                  : rgba(0, 0, 51, 0.3) !default;
+
+
+
+
+
+// /*------------------------------------*\
+//         #PAGINATOR
+// \*------------------------------------*/
+
+$styles-paginator                    : true;
+
+$paginator-padding                   : 0 !default;
+$paginator-font-size                 : 14 !default;
+$paginator-item-font-weight          : normal !default;
+$paginator-item-padding              : 1em !default;
+$paginator-transition                : background-color $transition-duration $transition-timing !default;
+
+// format
+$paginator-bg-color                  : transparent !default;
+$paginator-item-color                : $brand-primary-text !default;
+$paginator-item-bg-color             : $brand-primary !default;
+$paginator-item-selected-color       : $brand-secondary-text !default;
+$paginator-item-selected-bg-color    : $brand-secondary !default;
+
+// events
+$paginator-item-hover-bg-color       : darken($paginator-item-bg-color, 10%) !default;
+$paginator-item-active-bg-color      : lighten($paginator-item-bg-color, 5%) !default;
+
+
+
+
+
+// /*------------------------------------*\
+//         #DROPDOWN
+// \*------------------------------------*/
+
+$styles-dropdown                     : true;
+
+// base
+$dropdown-padding                    : 0 !default;
+$dropdown-font-size                  : 14 !default;
+$dropdown-item-font-weight           : normal !default;
+$dropdown-item-padding               : 1em !default;
+$dropdown-transition                 : background-color $transition-duration $transition-timing !default;
+$dropdown-item-transition            : background-color $transition-duration $transition-timing !default;
+
+// format
+$dropdown-bg-color                   : transparent !default;
+$dropdown-item-color                 : $brand-primary-text !default;
+$dropdown-item-bg-color              : $brand-primary !default;
+$dropdown-item-lead-bg-color         : darken($dropdown-item-bg-color, 15%) !default;
+$dropdown-item-selected-color        : $brand-secondary-text !default;
+$dropdown-item-selected-bg-color     : $brand-secondary !default;
+
+// events
+$dropdown-item-hover-bg-color        : darken($dropdown-item-bg-color, 10%) !default;
+$dropdown-item-active-bg-color       : lighten($dropdown-item-bg-color, 5%) !default;
+$dropdown-submenu-bg-color           : lighten($dropdown-item-hover-bg-color, 13%) !default;
+
+
+
+
+
+// /*------------------------------------*\
+//         #PANEL
+// \*------------------------------------*/
+
+$styles-panel                        : true;
+
+// general
+$panel-border                        : 1px solid #E2E2E2 !default;
+$panel-dropdown-close-color          : white !default;
+
+// title
+$panel-title-font-size               : em(16) !default;
+$panel-title-padding                 : 0.6em !default;
+$panel-title-color                   : white;
+$panel-title-bg-color                : $brand-primary;
+$panel-title-transform               : uppercase;
+
+// content
+$panel-content-font-size             : 14 !default;
+$panel-content-padding               : 0.5em !default;
+$panel-content-color                 : $brand-primary !default;
+$panel-content-bg-color              : white !default;
+
+// dropdown
+$panel-dropdown-close-rotate         : 90deg !default;
+$panel-dropdown-close-rotate-hover   : -90deg !default;
+$panel-dropdown-close-top            : rem(10);

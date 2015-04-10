@@ -1,0 +1,94 @@
+/*------------------------------------*\
+    #FORM-THEME
+\*------------------------------------*/
+
+.form {
+
+    fieldset {
+
+        legend {
+            font-weight: bold;
+            margin-bottom: $input-margin-bottom;
+        }
+
+    }
+
+    .warn {
+        padding: $input-padding + 0.3em $input-padding $input-padding;
+        background-color: $input-bg-color-focus;
+        display: block;
+        border: $input-border;
+        border-radius: 0 0 $input-border-radius $input-border-radius;
+        margin-top: -0.3em;
+        font-weight: bold;
+        font-style: normal;
+        @include font-size($input-font-size - 1);
+    }
+
+}
+
+    .form-control {
+        margin-bottom: $input-margin-bottom;
+    }
+
+    .form-control--inline {
+        margin-right: $input-margin-bottom;
+    }
+
+
+    .input {
+
+        @include inputs {
+            @include font-size($input-font-size);
+            background: $input-bg-color;
+            border-radius: $input-border-radius;
+            color: $input-color;
+            border: $input-border;
+            padding: $input-padding;
+            vertical-align: middle;
+            @include transition (all 0.6s);
+
+            &:focus {
+                color: $input-color-focus;
+                border-color: $input-border-color-focus;
+                background-color: $input-bg-color-focus;
+            }
+
+        }
+
+    }
+
+    .input--icon {
+
+        font-size: em($input-font-size);
+
+        @include inputs {
+
+            @if $input-icon-position == 'left' {
+                padding-left: $input-padding * 4;
+            }
+            @else if $input-icon-position == 'right' {
+                padding-right: $input-padding * 4;
+            }
+            @else {}
+
+        }
+
+        input {
+            font-size: em($input-font-size, $input-font-size);
+        }
+
+        .icon {
+            @if $input-icon-position == 'left' {
+                left: $input-padding;
+            }
+            @else if $input-icon-position == 'right' {
+                right: $input-padding;
+            }
+            @else {
+                @warn "Invalid value. You must specify 'left' or 'right'";
+            }
+            @include place-center;
+        }
+
+    }
