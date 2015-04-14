@@ -45,7 +45,6 @@
             color: $input-color;
             border: $input-border;
             padding: $input-padding;
-            vertical-align: middle;
             @include transition (all 0.6s);
 
             &:focus {
@@ -53,7 +52,12 @@
                 border-color: $input-border-color-focus;
                 background-color: $input-bg-color-focus;
             }
+        }
 
+        select:not([multiple]) {
+            height: ($input-padding + $input-padding) * 2;
+            padding-top: 0;
+            padding-bottom: 0;
         }
 
     }
@@ -61,8 +65,6 @@
     .input--icon {
 
         @include inputs {
-
-            font-size: $input-font-size;
 
             @if $input-icon-position == 'left' {
                 padding-left: $input-padding * 4;

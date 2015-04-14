@@ -1894,7 +1894,6 @@ a:hover, a:focus {
   color: #303048;
   border: 1px solid #1c1c29;
   padding: 0.625rem;
-  vertical-align: middle;
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
 }
@@ -1905,11 +1904,15 @@ a:hover, a:focus {
   border-color: #07070b;
   background-color: #f8f8f8;
 }
+.input select:not([multiple]) {
+  height: 2.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
 .input--icon input,
 .input--icon select,
 .input--icon textarea {
-  font-size: 0.875em;
   padding-right: 2.5rem;
 }
 .input--icon .icon {
