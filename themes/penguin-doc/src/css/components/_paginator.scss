@@ -7,12 +7,12 @@
     .paginator__item {}
 
         .paginator__link {
-        	@include font-size($paginator-font-size);
-            @include transition($paginator-transition);
+        	font-size: $paginator-font-size;
             font-weight: $paginator-item-font-weight;
             background-color: $paginator-item-bg-color;
             color: $paginator-item-color;
             padding: $paginator-item-padding;
+            @include transition($paginator-transition);
 
             &:hover, &:focus {
             	background-color: $paginator-item-hover-bg-color;

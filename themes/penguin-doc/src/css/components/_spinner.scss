@@ -37,7 +37,6 @@
     }
 }
 
-
 @keyframes tp-rotateplane {
     0% {
         transform: perspective(120px) rotateX(0deg) rotateY(0deg);
@@ -52,7 +51,6 @@
         -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
     }
 }
-
 
 .spinner__element--square {
     width: 40px;

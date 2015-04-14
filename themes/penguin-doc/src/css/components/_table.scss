@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 .table {
-    @include font-size($table-font-size);
+    font-size: $table-font-size;
 
     @include cells {
         padding: $table-padding;
@@ -49,7 +49,7 @@
 
     tfoot {
         @include cells {
-            @include font-size($tfoot-font-size, $table-font-size);
+            font-size: $tfoot-font-size;
             text-align: $tfoot-align;
             background-color: $tfoot-bg-color;
             border-top: 1px solid $tfoot-border-color;

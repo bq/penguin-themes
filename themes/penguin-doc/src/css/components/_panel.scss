@@ -8,17 +8,12 @@
     [data-rel="dropdown"] {
         color: $panel-dropdown-close-color;
         height: $icon-size-svg;
-        position: absolute;
-        top: $panel-dropdown-close-top;
-        right: $panel-title-padding;
         width: $icon-size-svg;
+        position: absolute;
+        top: $panel-title-padding;
+        right: $panel-title-padding;
         @include transition(all 0.2s  $transition-timing);
-
-
         @include rotate($panel-dropdown-close-rotate);
-
-
-
     }
 
     .dropdown--selected {

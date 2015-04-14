@@ -4,12 +4,11 @@
 
 .breadcrumb {}
     .breadcrumb__menu__item {
-        margin-right: 0.313em;
+        margin: $breadcrumb-item-margin;
 
         &:after {
-            content: ' » ';
-            margin-left: 0.313em;
+            content: $breadcrumb-item-icon;
+            margin-left: $breadcrumb-item-margin;
         }
 
     }
-

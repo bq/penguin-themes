@@ -17,12 +17,16 @@
             .tab__block__link {
                 background-color: $tab-item-bg-color;
                 color: $tab-item-color;
-                text-transform: uppercase;
                 padding: $tab-item-padding;
+
+                @if $tab-transition != initial {
+                    @include transition($tab-transition);
+                }
 
                 &:hover, &:focus {
                     color: $tab-item-hover-color;
                     background: $tab-item-hover-bg-color;
+                    text-decoration: $tab-item-text-decoration;
                 }
 
                 &:active {
@@ -41,7 +45,7 @@
             }
 
     .tab__content {
-        @include font-size($tab-content-font-size);
+        font-size: $tab-content-font-size;
         padding: $tab-content-padding;
         background: $tab-content-bg-color;
         border: $tab-content-border;

@@ -3,8 +3,7 @@
 \*------------------------------------*/
 
 .btn {
-    @include font-size($button-font-size);
-    line-height: normal;
+    font-size: $button-font-size;
     font-weight: $button-font-weight;
     border-radius: $button-radius;
     border: $button-border;

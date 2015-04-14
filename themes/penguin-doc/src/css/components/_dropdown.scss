@@ -16,7 +16,7 @@
 
         .dropdown__link,
         .dropdown__menu__link {
-            @include font-size($dropdown-font-size);
+            font-size: $dropdown-font-size;
             @include transition($dropdown-transition);
             font-weight: $dropdown-item-font-weight;
             background-color: $dropdown-item-bg-color;

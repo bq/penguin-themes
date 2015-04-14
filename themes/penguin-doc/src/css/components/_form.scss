@@ -14,15 +14,15 @@
     }
 
     .warn {
-        padding: $input-padding + 0.3em $input-padding $input-padding;
+        padding: $input-padding + rem(4) $input-padding $input-padding;
         background-color: $input-bg-color-focus;
         display: block;
         border: $input-border;
         border-radius: 0 0 $input-border-radius $input-border-radius;
-        margin-top: -0.3em;
+        margin-top: em(-4);
         font-weight: bold;
         font-style: normal;
-        @include font-size($input-font-size - 1);
+        font-size: $input-font-size - em(1, $input-font-size);
     }
 
 }
@@ -39,7 +39,7 @@
     .input {
 
         @include inputs {
-            @include font-size($input-font-size);
+            font-size: $input-font-size;
             background: $input-bg-color;
             border-radius: $input-border-radius;
             color: $input-color;
@@ -60,9 +60,9 @@
 
     .input--icon {
 
-        font-size: em($input-font-size);
-
         @include inputs {
+
+            font-size: $input-font-size;
 
             @if $input-icon-position == 'left' {
                 padding-left: $input-padding * 4;
@@ -70,12 +70,10 @@
             @else if $input-icon-position == 'right' {
                 padding-right: $input-padding * 4;
             }
-            @else {}
+            @else {
+                @warn "Invalid value. You must specify 'left' or 'right'";
+            }
 
-        }
-
-        input {
-            font-size: em($input-font-size, $input-font-size);
         }
 
         .icon {
@@ -88,7 +86,6 @@
             @else {
                 @warn "Invalid value. You must specify 'left' or 'right'";
             }
-            @include place-center;
         }
 
     }

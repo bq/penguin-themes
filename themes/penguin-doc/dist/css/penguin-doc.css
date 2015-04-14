@@ -233,7 +233,7 @@ html {
 body {
   font-family: "Arial", Helvetica, Sans-serif;
   font-size: 1em;
-  line-height: 1.375;
+  line-height: 0.72727em;
   color: #B5B1B1;
   background-color: white;
   height: 100%;
@@ -258,9 +258,6 @@ a:hover, a:focus {
 /*------------------------------------*\
     #UTILS-PENGUIN
 \*------------------------------------*/
-/**
- * Floats
- */
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table;
@@ -283,9 +280,6 @@ a:hover, a:focus {
   float: left !important;
 }
 
-/**
- * Togling content
- */
 .hide {
   display: none !important;
 }
@@ -294,9 +288,6 @@ a:hover, a:focus {
   display: block !important;
 }
 
-/**
- * Hide from screenreaders and browsers
- */
 .hidden {
   display: none !important;
   visibility: hidden !important;
@@ -313,58 +304,32 @@ a:hover, a:focus {
   width: 1px;
 }
 
-/**
- * Text
- */
-.text-hide {
-  font-size: initial;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
+.align-left {
+  text-align: left !important;
 }
 
-.text-left {
-  text-align: left;
+.align-right {
+  text-align: right !important;
 }
 
-.text-right {
-  text-align: right;
+.align-justify {
+  text-align: justify !important;
 }
 
-.text-justify {
-  text-align: justify;
+.align-center {
+  text-align: center !important;
 }
 
-.text-center {
-  text-align: center;
-}
-
-.text-small {
-  font-size: 0.8125em;
-}
-
-.text-medium {
-  font-size: 1.125em;
-}
-
-.text-large {
-  font-size: 0.8125em;
-}
-
-/**
- * Format
- */
 .bold {
   font-weight: bold !important;
 }
 
 .normal {
-  font-weight: bold !important;
+  font-weight: normal !important;
 }
 
 .cursive {
-  font-weight: bold !important;
+  font-style: italic !important;
 }
 
 .underline {
@@ -1571,7 +1536,7 @@ a:hover, a:focus {
     #ALERT-THEME
 \*------------------------------------*/
 .alert {
-  margin: 0 0 1em;
+  margin: 0 0 1rem;
 }
 
 .alert__content {
@@ -1581,22 +1546,22 @@ a:hover, a:focus {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
 }
 .alert--success .alert__content {
-  background-color: #fff;
+  background-color: white;
   color: #67B646;
   border-color: #67B646;
 }
 .alert--info .alert__content {
-  background-color: #fff;
+  background-color: white;
   color: #4183C4;
   border-color: #4183C4;
 }
 .alert--warning .alert__content {
-  background-color: #fff;
+  background-color: white;
   color: #F93;
   border-color: #F93;
 }
 .alert--error .alert__content {
-  background-color: #fff;
+  background-color: white;
   color: #BD2C00;
   border-color: #BD2C00;
 }
@@ -1674,11 +1639,11 @@ a:hover, a:focus {
     #BREADCRUMB-THEME
 \*------------------------------------*/
 .breadcrumb__menu__item {
-  margin-right: 0.313em;
+  margin: 0.25rem;
 }
 .breadcrumb__menu__item:after {
-  content: ' » ';
-  margin-left: 0.313em;
+  content: " » ";
+  margin-left: 0.25rem;
 }
 
 /*------------------------------------*\
@@ -1729,7 +1694,6 @@ a:hover, a:focus {
 \*------------------------------------*/
 .btn {
   font-size: 0.9375em;
-  line-height: normal;
   font-weight: normal;
   border-radius: 4px;
   border: none;
@@ -1741,7 +1705,7 @@ a:hover, a:focus {
   margin: 0 0.375rem;
 }
 .btn[disabled], .btn[readonly] {
-  color: #aaa;
+  color: #aaaaaa;
   background-color: #eeeeee;
   border: 1px solid none;
 }
@@ -1773,7 +1737,7 @@ a:hover, a:focus {
 }
 
 .btn--disabled {
-  color: #aaa;
+  color: #aaaaaa;
   background-color: #eeeeee;
   border: 1px solid none;
 }
@@ -1899,26 +1863,26 @@ a:hover, a:focus {
 \*------------------------------------*/
 .form fieldset legend {
   font-weight: bold;
-  margin-bottom: 1em;
+  margin-bottom: 0.75rem;
 }
 .form .warn {
-  padding: 1.1em 0.8em 0.8em;
+  padding: 0.875rem 0.625rem 0.625rem;
   background-color: #f8f8f8;
   display: block;
   border: 1px solid #1c1c29;
-  border-radius: 0 0 0.4em 0.4em;
-  margin-top: -0.3em;
+  border-radius: 0 0 3px 3px;
+  margin-top: -0.25em;
   font-weight: bold;
   font-style: normal;
-  font-size: 0.8125em;
+  font-size: -0.26786em;
 }
 
 .form-control {
-  margin-bottom: 1em;
+  margin-bottom: 0.75rem;
 }
 
 .form-control--inline {
-  margin-right: 1em;
+  margin-right: 0.75rem;
 }
 
 .input input,
@@ -1926,10 +1890,10 @@ a:hover, a:focus {
 .input textarea {
   font-size: 0.875em;
   background: #fdfdfd;
-  border-radius: 0.4em;
+  border-radius: 3px;
   color: #303048;
   border: 1px solid #1c1c29;
-  padding: 0.8em;
+  padding: 0.625rem;
   vertical-align: middle;
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
@@ -1942,24 +1906,14 @@ a:hover, a:focus {
   background-color: #f8f8f8;
 }
 
-.input--icon {
-  font-size: 0.875em;
-}
 .input--icon input,
 .input--icon select,
 .input--icon textarea {
-  padding-right: 3.2em;
-}
-.input--icon input {
-  font-size: 1em;
+  font-size: 0.875em;
+  padding-right: 2.5rem;
 }
 .input--icon .icon {
-  right: 0.8em;
-  position: absolute;
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  top: 50%;
+  right: 0.625rem;
 }
 
 /*------------------------------------*\
@@ -2003,10 +1957,10 @@ a:hover, a:focus {
 }
 
 .icon--invert {
-  color: #333;
+  color: #333333;
 }
 .icon--invert svg {
-  fill: #333;
+  fill: #333333;
 }
 
 .icon--close {
@@ -2017,7 +1971,7 @@ a:hover, a:focus {
 }
 
 .icon-text {
-  padding-left: 2.075rem;
+  padding-left: 2rem;
 }
 .icon-text .icon {
   left: 0;
@@ -2087,7 +2041,7 @@ a:hover, a:focus {
     #MODAL-THEME
 \*------------------------------------*/
 .modal__dialog {
-  padding: 0.625em;
+  padding: 0.625rem;
 }
 
 .modal__dialog__content {
@@ -2098,20 +2052,20 @@ a:hover, a:focus {
 }
 
 .modal__header {
-  padding: 1.25em;
+  padding: 1.25rem;
 }
 
 .modal__close {
-  right: 0.83333em;
-  top: 0.625em;
+  right: 0.83333rem;
+  top: 0.625rem;
 }
 
 .modal__body {
-  padding: 1.25em;
+  padding: 1.25rem;
 }
 
 .modal__footer {
-  padding: 1.1875em 1.25em 1.25em;
+  padding: 1.1875rem 1.25rem 1.25rem;
 }
 
 /*------------------------------------*\
@@ -2203,12 +2157,12 @@ a:hover, a:focus {
 \*------------------------------------*/
 .nav__menu__link {
   font-size: 0.875em;
-  -webkit-transition: background-color 0.3s linear;
-  transition: background-color 0.3s linear;
   font-weight: normal;
   background-color: #303048;
   color: white;
-  padding: 1em;
+  padding: 1rem;
+  -webkit-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
 }
 .nav__menu__link:hover, .nav__menu__link:focus {
   background-color: #1c1c29;
@@ -2230,12 +2184,12 @@ a:hover, a:focus {
 }
 
 .nav__submenu__link {
-  -webkit-transition: background-color 0.3s linear;
-  transition: background-color 0.3s linear;
   color: white;
   font-weight: normal;
-  padding: 1em;
+  padding: 1rem;
   display: block;
+  -webkit-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
 }
 .nav__submenu__link:hover, .nav__submenu__link:focus {
   background-color: #1c1c29;
@@ -2295,12 +2249,12 @@ a:hover, a:focus {
 \*------------------------------------*/
 .paginator__link {
   font-size: 0.875em;
-  -webkit-transition: background-color 0.3s linear;
-  transition: background-color 0.3s linear;
   font-weight: normal;
   background-color: #303048;
   color: white;
-  padding: 1em;
+  padding: 1rem;
+  -webkit-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
 }
 .paginator__link:hover, .paginator__link:focus {
   background-color: #1c1c29;
@@ -2333,10 +2287,10 @@ a:hover, a:focus {
 .panel [data-rel="dropdown"] {
   color: white;
   height: 1.75rem;
-  position: absolute;
-  top: 0.625rem;
-  right: 0.6em;
   width: 1.75rem;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
   -webkit-transform: rotate(90deg);
@@ -2351,15 +2305,15 @@ a:hover, a:focus {
 
 .panel__title {
   font-size: 1em;
-  padding: 0.6em;
+  padding: 0.75rem;
   color: white;
   background-color: #303048;
   text-transform: uppercase;
 }
 
 .panel__content {
-  font-size: 14;
-  padding: 0.5em;
+  font-size: 0.875em;
+  padding: 0.75rem;
 }
 
 /*------------------------------------*\
@@ -2632,15 +2586,17 @@ a:hover, a:focus {
 .tab__block__link {
   background-color: #303048;
   color: white;
-  text-transform: uppercase;
-  padding: 1em;
+  padding: 1rem;
+  -webkit-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
 }
 .tab__block__link:hover, .tab__block__link:focus {
   color: white;
-  background: #303048;
+  background: #4f4f76;
+  text-decoration: none;
 }
 .tab__block__link:active {
-  background-color: initial;
+  background-color: #636394;
 }
 .tab__block__item--selected .tab__block__link {
   color: white;
@@ -2652,7 +2608,7 @@ a:hover, a:focus {
 
 .tab__content {
   font-size: 0.875em;
-  padding: 1em;
+  padding: 1rem;
   background: #fafafa;
   border: 1px solid #fa8500;
 }
@@ -2676,7 +2632,7 @@ a:hover, a:focus {
 }
 .table td,
 .table th {
-  padding: 0.8em;
+  padding: 0.75rem;
 }
 .table thead td,
 .table thead th {
@@ -2741,29 +2697,40 @@ a:hover, a:focus {
   font-size: 1em;
 }
 
-.lead, .text .lead {
-  font-size: 1.125em;
-  letter-spacing: .1em;
-}
-
-.small, .text small {
-  font-size: 0.75em;
-}
-
 .text p, .text ul, .text ol {
   font-size: 0.875em;
-  list-style-position: inside;
+}
+
+.text-small {
+  font-size: 0.75em;
+}
+.text .text-small {
+  font-size: 0.85714em;
+}
+
+.text-medium {
+  font-size: 1em;
+}
+.text .text-medium {
+  font-size: 1.14286em;
+}
+
+.text-large {
+  font-size: 1.125em;
+}
+.text .text-large {
+  font-size: 1.28571em;
 }
 
 /*------------------------------------*\
     #TEXT-THEME
 \*------------------------------------*/
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  margin-bottom: 1em;
+  margin: 0 0 1em;
 }
 
 .text p, .text ul, .text ol {
-  margin-bottom: 1.375em;
+  margin: 0 0 1em;
 }
 .text ul li {
   list-style-type: disc;
@@ -2772,9 +2739,5 @@ a:hover, a:focus {
   list-style-type: decimal;
 }
 .text li li {
-  margin-top: 1em;
-  margin-left: 1em;
-}
-.text p, .text li {
-  margin-bottom: 1.375em;
+  margin: 1em 0 0 1em;
 }
