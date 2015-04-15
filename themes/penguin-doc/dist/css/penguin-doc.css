@@ -2451,8 +2451,8 @@ a:hover, a:focus {
   text-align: center;
 }
 .spinner__element--simple:before {
-  height: 2.5em;
-  width: 2.5em;
+  height: 3.75em;
+  width: 3.75em;
   border: 10px solid rgba(48, 48, 72, 0.2);
   border-top-color: rgba(48, 48, 72, 0.8);
   border-radius: 100%;
