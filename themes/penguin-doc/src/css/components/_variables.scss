@@ -314,10 +314,15 @@ $panel-dropdown-close-rotate-hover   : -90deg !default;
 // \*------------------------------------*/
 
 $styles-spinner                      : true;
-$spinner-backdrop-bg                 : rgba(255, 255, 255, 0.75);
+
+// base
+$spinner-font-size                   : em(10);
+$spinner-size                        : em(40);
+$spinner-speed                       : 0.6s;
 
 // format
-$spinner-element-bg                  : rgba(0, 0, 51, 0.3) !default;
+$spinner-color                       : $brand-primary !default;
+$spinner-backdrop-bg                 : rgba(255, 255, 255, 0.75);
 
 
 
@@ -409,3 +414,4 @@ $text-size-large                     : 18;
 
 // margin
 $text-margin                         : em(16);
+$text-style-list                     : disc;

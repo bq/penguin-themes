@@ -143,7 +143,7 @@ article, aside, audio, canvas, figcaption, figure, footer, header, hgroup, outpu
 @media print {
   * {
     background: transparent !important;
-    color: #000 !important;
+    color: #333333 !important;
     text-shadow: none !important;
     filter: none !important;
     -ms-filter: none !important;
@@ -233,7 +233,7 @@ html {
 body {
   font-family: "Arial", Helvetica, Sans-serif;
   font-size: 1em;
-  line-height: 0.72727em;
+  line-height: 1.375em;
   color: #B5B1B1;
   background-color: white;
   height: 100%;
@@ -1840,6 +1840,9 @@ a:hover, a:focus {
 .form .input:not(.input--checkbox):not(.input--radio) textarea {
   vertical-align: top;
 }
+.form .input:not(.input--checkbox):not(.input--radio) input[type="file"] {
+  line-height: 1rem;
+}
 
 .input--radio,
 .input--checkbox {
@@ -2432,59 +2435,50 @@ a:hover, a:focus {
   -ms-border-radius: 0.5em;
   -o-border-radius: 0.5em;
   border-radius: 0.5em;
-  -webkit-box-shadow: rgba(0, 0, 51, 0.3) 1.5em 0 0 0, rgba(0, 0, 51, 0.3) 1.1em 1.1em 0 0, rgba(0, 0, 51, 0.3) 0 1.5em 0 0, rgba(0, 0, 51, 0.3) -1.1em 1.1em 0 0, rgba(0, 0, 51, 0.3) -1.5em 0 0 0, rgba(0, 0, 51, 0.3) -1.1em -1.1em 0 0, rgba(0, 0, 51, 0.3) 0 -1.5em 0 0, rgba(0, 0, 51, 0.3) 1.1em -1.1em 0 0;
-  -moz-box-shadow: rgba(0, 0, 51, 0.3) 1.5em 0 0 0, rgba(0, 0, 51, 0.3) 1.1em 1.1em 0 0, rgba(0, 0, 51, 0.3) 0 1.5em 0 0, rgba(0, 0, 51, 0.3) -1.1em 1.1em 0 0, rgba(0, 0, 51, 0.3) -1.5em 0 0 0, rgba(0, 0, 51, 0.3) -1.1em -1.1em 0 0, rgba(0, 0, 51, 0.3) 0 -1.5em 0 0, rgba(0, 0, 51, 0.3) 1.1em -1.1em 0 0;
-  box-shadow: rgba(0, 0, 51, 0.3) 1.5em 0 0 0, rgba(0, 0, 51, 0.3) 1.1em 1.1em 0 0, rgba(0, 0, 51, 0.3) 0 1.5em 0 0, rgba(0, 0, 51, 0.3) -1.1em 1.1em 0 0, rgba(0, 0, 51, 0.3) -1.5em 0 0 0, rgba(0, 0, 51, 0.3) -1.1em -1.1em 0 0, rgba(0, 0, 51, 0.3) 0 -1.5em 0 0, rgba(0, 0, 51, 0.3) 1.1em -1.1em 0 0;
+  -webkit-box-shadow: #303048 1.5em 0 0 0, #303048 1.1em 1.1em 0 0, #303048 0 1.5em 0 0, #303048 -1.1em 1.1em 0 0, #303048 -1.5em 0 0 0, #303048 -1.1em -1.1em 0 0, #303048 0 -1.5em 0 0, #303048 1.1em -1.1em 0 0;
+  -moz-box-shadow: #303048 1.5em 0 0 0, #303048 1.1em 1.1em 0 0, #303048 0 1.5em 0 0, #303048 -1.1em 1.1em 0 0, #303048 -1.5em 0 0 0, #303048 -1.1em -1.1em 0 0, #303048 0 -1.5em 0 0, #303048 1.1em -1.1em 0 0;
+  box-shadow: #303048 1.5em 0 0 0, #303048 1.1em 1.1em 0 0, #303048 0 1.5em 0 0, #303048 -1.1em 1.1em 0 0, #303048 -1.5em 0 0 0, #303048 -1.1em -1.1em 0 0, #303048 0 -1.5em 0 0, #303048 1.1em -1.1em 0 0;
   display: inline-block;
-  font-size: 10px;
+  font-size: 0.625em;
   width: 1em;
   height: 1em;
   overflow: hidden;
   text-indent: 100%;
 }
 
-@-webkit-keyframes tp-rotateplane {
-  0% {
-    -webkit-transform: perspective(120px);
-  }
-  50% {
-    -webkit-transform: perspective(120px) rotateY(180deg);
-  }
-  100% {
-    -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg);
-  }
+.spinner__element--simple {
+  font-size: 0.625em;
+  text-align: center;
 }
-@keyframes tp-rotateplane {
-  0% {
-    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-  }
-  50% {
-    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-  }
-  100% {
-    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-  }
-}
-.spinner__element--square {
-  width: 40px;
-  height: 40px;
-  background: url(http://i.imgur.com/ICOsAmq.gif) no-repeat center center;
-  background-color: #fff;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
-  margin-top: -20px;
-  margin-left: -20px;
-  -webkit-animation: tp-rotateplane 1.2s infinite ease-in-out;
-  animation: tp-rotateplane 1.2s infinite ease-in-out;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  font-size: 0;
+.spinner__element--simple:before {
+  height: 2.5em;
+  width: 2.5em;
+  border: 10px solid rgba(48, 48, 72, 0.2);
+  border-top-color: rgba(48, 48, 72, 0.8);
+  border-radius: 100%;
+  -webkit-animation: rotation 0.6s infinite linear;
+  animation: rotation 0.6s infinite linear;
+  content: " ";
+  display: block;
+  margin: auto;
 }
 
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 /*------------------------------------*\
     #TAB-PENGUIN
 \*------------------------------------*/
@@ -2700,7 +2694,7 @@ a:hover, a:focus {
   font-size: 1em;
 }
 
-.text p, .text ul, .text ol {
+.text > p, .text > ul, .text > ol {
   font-size: 0.875em;
 }
 
@@ -2729,18 +2723,21 @@ a:hover, a:focus {
     #TEXT-THEME
 \*------------------------------------*/
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  margin: 0 0 1em;
+  margin-bottom: 1em;
 }
 
 .text p, .text ul, .text ol {
-  margin: 0 0 1em;
+  margin-bottom: 1em;
 }
-.text ul li {
+.text ul, .text ol {
+  margin-left: 1em;
+}
+.text ul ul, .text ul ol, .text ol ul, .text ol ol {
+  margin-bottom: 0;
+}
+.text ul {
   list-style-type: disc;
 }
-.text ol li {
+.text ol {
   list-style-type: decimal;
-}
-.text li li {
-  margin: 1em 0 0 1em;
 }
