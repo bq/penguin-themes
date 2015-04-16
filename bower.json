@@ -14,7 +14,7 @@
         ".editorconfig"
     ],
     "dependencies": {
-        "penguin": "0.0.3"
+        "penguin": "0.0.4"
     },
     "homepage": "https://penguin.docs.bqws.io",
     "authors": [
