@@ -62,6 +62,16 @@
 
     }
 
+
+    .input--radio,
+    .input--checkbox {
+
+        input {
+            border: none;
+        }
+
+    }
+
     .input--icon {
 
         @include inputs {
