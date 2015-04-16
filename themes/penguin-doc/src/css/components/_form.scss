@@ -14,15 +14,9 @@
     }
 
     .warn {
-        padding: $input-padding + rem(4) $input-padding $input-padding;
-        background-color: $input-bg-color-focus;
-        display: block;
-        border: $input-border;
-        border-radius: 0 0 $input-border-radius $input-border-radius;
-        margin-top: em(-4);
-        font-weight: bold;
-        font-style: normal;
-        font-size: $input-font-size - em(1, $input-font-size);
+        color: $input-warn-color;
+        background-color: $input-warn-bg-color;
+        border-color: $input-warn-border-color;
     }
 
 }

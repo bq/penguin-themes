@@ -161,6 +161,11 @@ $input-color-focus                   : darken($input-color, 10%) !default;
 $input-bg-color-focus                : darken($input-bg-color, 2%) !default;
 $input-border-color-focus            : darken($input-border-color, 10%) !default;
 
+// warn
+$input-warn-color                    : #c60f13 !default;
+$input-warn-bg-color                 : white !default;
+$input-warn-border-color             : $input-warn-color !default;
+
 // warnings
 $msg-font-size                       : em(12) !default;
 $msg-font-weight                     : bold !default;
