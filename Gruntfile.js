@@ -19,7 +19,7 @@ module.exports = function(grunt) {
                 options: {
                     style: 'expanded',
                     sourcemap: 'none',
-                    loadPath: 'bower_components/'
+                    loadPath: '../'
                 },
                 files: {
                     '<%= themeUrl %>/dist/css/<%= theme %>.css': '<%= themeUrl %>/src/css/main.scss'
