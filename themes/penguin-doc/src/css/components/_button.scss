@@ -17,6 +17,10 @@
         margin: 0 $button-group-lateral-margin;
     }
 
+    .btn-group--fluid & {
+        margin: $button-group-vertical-margin 0;
+    }
+
     &[disabled],
     &[readonly] {
         @include button($button-disabled-color, $button-disabled-bg, $button-disabled-border, none);
