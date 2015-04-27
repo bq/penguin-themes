@@ -288,11 +288,6 @@ a:hover, a:focus {
   display: block !important;
 }
 
-.hidden {
-  display: none !important;
-  visibility: hidden !important;
-}
-
 .invisible {
   border: 0;
   clip: rect(0 0 0 0);
@@ -1516,9 +1511,6 @@ a:hover, a:focus {
 .alert__content {
   position: relative;
 }
-.alert--inline .alert__content {
-  display: inline-block;
-}
 
 .alert__close {
   position: absolute;
@@ -1530,6 +1522,23 @@ a:hover, a:focus {
 
 .alert--right {
   text-align: right;
+}
+
+/**
+ * alert inline
+ */
+.alert--inline .alert__content {
+  display: inline-block;
+}
+
+/**
+ * alert top
+ */
+.alert--top {
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 /*------------------------------------*\
@@ -1557,13 +1566,13 @@ a:hover, a:focus {
 }
 .alert--warning .alert__content {
   background-color: white;
-  color: #F93;
-  border-color: #F93;
+  color: #FF9933;
+  border-color: #FF9933;
 }
 .alert--error .alert__content {
   background-color: white;
-  color: #BD2C00;
-  border-color: #BD2C00;
+  color: #c60f13;
+  border-color: #c60f13;
 }
 
 .alert__close {
@@ -1598,6 +1607,17 @@ a:hover, a:focus {
 }
 .banner__content__item .banner__content__link img {
   width: 100%;
+}
+
+/**
+ * banner stacked
+ */
+.banner--stacked .banner__content,
+.banner--stacked .banner__content__item {
+  display: block;
+}
+.banner--stacked .banner__content__link {
+  width: auto;
 }
 
 /*------------------------------------*\
@@ -1666,6 +1686,9 @@ a:hover, a:focus {
   vertical-align: middle;
 }
 
+/**
+ * btn disabled
+ */
 .btn--disabled {
   cursor: not-allowed;
   cursor: default;
@@ -1675,18 +1698,39 @@ a:hover, a:focus {
 .btn-group {
   clear: both;
 }
-.btn-group li {
+
+.btn-group__item {
   display: inline-block;
 }
-.btn-group li:first-child .btn {
+.btn-group__item:first-child .btn {
   margin-left: 0;
 }
-.btn-group li:last-child .btn {
+.btn-group__item:last-child .btn {
   margin-right: 0;
 }
-.btn-group > .btn:only-child {
+.btn-group__item:only-child .btn {
   margin-left: 0;
   margin-right: 0;
+}
+.btn-group--fluid .btn-group__item {
+  display: block;
+}
+
+/**
+ * btn fluid
+ */
+.btn--fluid {
+  width: 100%;
+}
+
+/**
+ * btn-group fluid
+ */
+.btn-group--fluid .btn {
+  width: 100%;
+}
+.btn-group--fluid .btn-group__item {
+  display: block;
 }
 
 /*------------------------------------*\
@@ -1703,6 +1747,9 @@ a:hover, a:focus {
 }
 .btn-group .btn {
   margin: 0 0.375rem;
+}
+.btn-group--fluid .btn {
+  margin: 0.375rem 0;
 }
 .btn[disabled], .btn[readonly] {
   color: #aaaaaa;
@@ -1849,6 +1896,10 @@ a:hover, a:focus {
   display: inline-block !important;
   vertical-align: text-bottom;
 }
+.input--radio input,
+.input--checkbox input {
+  vertical-align: middle;
+}
 
 .input--icon {
   position: relative;
@@ -1868,17 +1919,6 @@ a:hover, a:focus {
   font-weight: bold;
   margin-bottom: 0.75rem;
 }
-.form .warn {
-  padding: 0.875rem 0.625rem 0.625rem;
-  background-color: #f8f8f8;
-  display: block;
-  border: 1px solid #1c1c29;
-  border-radius: 0 0 3px 3px;
-  margin-top: -0.25em;
-  font-weight: bold;
-  font-style: normal;
-  font-size: -0.26786em;
-}
 
 .form-control {
   margin-bottom: 0.75rem;
@@ -1886,6 +1926,12 @@ a:hover, a:focus {
 
 .form-control--inline {
   margin-right: 0.75rem;
+}
+
+.form-control--warn .input input {
+  color: #c60f13;
+  background-color: white;
+  border-color: #c60f13;
 }
 
 .input input,
@@ -2077,42 +2123,8 @@ a:hover, a:focus {
 /*------------------------------------*\
     #NAVIGATION-PENGUIN
 \*------------------------------------*/
-.nav--inline .nav__menu:before, .nav--inline .nav__menu:after {
-  content: " ";
-  display: table;
-}
-.nav--inline .nav__menu:after {
-  clear: both;
-}
-.nav--bar .nav__menu {
-  display: table;
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-.nav--fluid .nav__menu {
-  display: table;
-  height: 100%;
-  position: relative;
-}
-
 .nav__menu__item {
   position: relative;
-}
-.nav--inline .nav__menu__item {
-  float: left;
-}
-.nav--bar .nav__menu__item {
-  display: table-cell;
-  vertical-align: middle;
-  height: 100%;
-  text-align: center;
-}
-.nav--fluid .nav__menu__item {
-  display: table-cell;
-  vertical-align: middle;
-  height: 100%;
-  text-align: center;
 }
 
 .nav__menu__link {
@@ -2124,29 +2136,6 @@ a:hover, a:focus {
   cursor: not-allowed;
   cursor: default;
 }
-.nav--bar .nav__menu__link {
-  display: block;
-}
-.nav--stacked .nav__menu__link {
-  display: block;
-}
-
-.nav--inline .nav__submenu {
-  min-width: 100%;
-}
-.nav--bar .nav__submenu {
-  min-width: 100%;
-}
-.nav--fluid .nav__submenu {
-  min-width: 100%;
-}
-
-.nav--bar .nav__submenu__item {
-  text-align: left;
-}
-.nav--fluid .nav__submenu__item {
-  text-align: left;
-}
 
 .nav__submenu__link {
   text-decoration: none;
@@ -2156,6 +2145,76 @@ a:hover, a:focus {
 .nav__submenu__item--selected .nav__submenu__link {
   cursor: not-allowed;
   cursor: default;
+}
+
+/**
+ * Nav Bar
+ */
+.nav--bar .nav__menu {
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.nav--bar .nav__menu__item {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  text-align: center;
+}
+.nav--bar .nav__menu__link {
+  display: block;
+}
+.nav--bar .nav__submenu {
+  min-width: 100%;
+}
+.nav--bar .nav__submenu__item {
+  text-align: left;
+}
+
+/**
+ * Nav Fluid
+ */
+.nav--fluid .nav__menu {
+  display: table;
+  height: 100%;
+  position: relative;
+}
+.nav--fluid .nav__menu__item {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  text-align: center;
+}
+.nav--fluid .nav__submenu {
+  min-width: 100%;
+}
+.nav--fluid .nav__submenu__item {
+  text-align: left;
+}
+
+/**
+ * Nav Inline
+ */
+.nav--inline .nav__menu:before, .nav--inline .nav__menu:after {
+  content: " ";
+  display: table;
+}
+.nav--inline .nav__menu:after {
+  clear: both;
+}
+.nav--inline .nav__menu__item {
+  float: left;
+}
+.nav--inline .nav__submenu {
+  min-width: 100%;
+}
+
+/**
+ * Nav Stacked
+ */
+.nav--stacked .nav__menu__link {
+  display: block;
 }
 
 /*------------------------------------*\
@@ -2216,15 +2275,6 @@ a:hover, a:focus {
 .paginator__item {
   position: relative;
 }
-.paginator--bar .paginator__item {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-}
-.paginator--inline .paginator__item {
-  display: inline-block;
-  word-spacing: normal;
-}
 
 .paginator__link {
   text-decoration: none;
@@ -2235,19 +2285,33 @@ a:hover, a:focus {
   cursor: not-allowed;
   cursor: default;
 }
-.paginator--bar .paginator__link {
-  display: block;
-}
 
+/**
+ * paginator bar
+ */
 .paginator--bar {
   display: table;
   width: 100%;
   position: relative;
 }
+.paginator--bar .paginator__item {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.paginator--bar .paginator__link {
+  display: block;
+}
 
+/**
+ * paginator inline
+ */
 .paginator--inline {
   word-spacing: -0.3125em;
-  word-spacing: -0.3125em;
+}
+.paginator--inline .paginator__item {
+  display: inline-block;
+  word-spacing: normal;
 }
 
 /*------------------------------------*\
@@ -2482,45 +2546,9 @@ a:hover, a:focus {
 /*------------------------------------*\
     #TAB-PENGUIN
 \*------------------------------------*/
-.tab--inline .tab__block:before, .tab--inline .tab__block:after {
-  content: " ";
-  display: table;
-}
-.tab--inline .tab__block:after {
-  clear: both;
-}
-.tab--reverse .tab__block {
-  text-align: right;
-}
-.tab--bar .tab__block {
-  display: table;
-  width: 100%;
-  height: 100%;
-}
-.tab--stacked .tab__block {
-  display: table-cell;
-}
-.tab--stacked.tab--reverse .tab__block {
-  position: relative;
-}
-
 .tab__block__item,
 .tab__button__item {
   position: relative;
-}
-
-.tab--inline .tab__text__item, .tab--inline
-.tab__block__item, .tab--inline
-.tab__button__item {
-  display: inline-block;
-}
-.tab--bar .tab__text__item, .tab--bar
-.tab__block__item, .tab--bar
-.tab__button__item {
-  display: table-cell;
-  vertical-align: bottom;
-  height: 100%;
-  text-align: center;
 }
 
 .tab__block__link,
@@ -2534,29 +2562,11 @@ a:hover, a:focus {
   cursor: not-allowed;
   cursor: default;
 }
-.tab--bar .tab__block__link, .tab--bar
-.tab__button__element {
-  display: block;
-}
-.tab--stacked .tab__block__link, .tab--stacked
-.tab__button__element {
-  display: block;
-}
 
 .tab__text__item {
   text-decoration: none;
   line-height: normal;
   display: inline-block;
-}
-
-.tab--reverse .tab__content {
-  clear: both;
-}
-.tab--stacked .tab__content {
-  display: table-cell;
-}
-.tab--stacked.tab--reverse .tab__content {
-  position: relative;
 }
 
 .tab__content__item {
@@ -2567,10 +2577,71 @@ a:hover, a:focus {
   display: block;
 }
 
-.tab--stacked {
+/**
+ * Tab bar
+ */
+.tab--bar .tab__block {
   display: table;
   width: 100%;
+  height: 100%;
+}
+.tab--bar .tab__text__item,
+.tab--bar .tab__block__item,
+.tab--bar .tab__button__item {
+  display: table-cell;
+  vertical-align: bottom;
+  height: 100%;
+  text-align: center;
+}
+.tab--bar .tab__block__link,
+.tab--bar .tab__button__element {
+  display: block;
+}
+
+/**
+ * Tab inline
+ */
+.tab--inline .tab__block:before, .tab--inline .tab__block:after {
+  content: " ";
+  display: table;
+}
+.tab--inline .tab__block:after {
+  clear: both;
+}
+.tab--inline .tab__text__item,
+.tab--inline .tab__block__item,
+.tab--inline .tab__button__item {
+  display: inline-block;
+}
+
+/**
+ * Tab reverse
+ */
+.tab--reverse .tab__block {
+  text-align: right;
+  left: 70%;
+}
+.tab--reverse .tab__content {
+  clear: both;
+  left: -30%;
+}
+
+/**
+ * Tab stacked
+ */
+.tab--stacked {
+  display: table;
   table-layout: fixed;
+  width: 100%;
+}
+.tab--stacked .tab__block,
+.tab--stacked .tab__content {
+  display: table-cell;
+  position: relative;
+}
+.tab--stacked .tab__block__link,
+.tab--stacked .tab__button__element {
+  display: block;
 }
 
 /*------------------------------------*\
@@ -2619,6 +2690,27 @@ a:hover, a:focus {
 .table {
   cursor: default;
   width: 100%;
+}
+
+/**
+ * table stacked
+ */
+.table--stacked thead {
+  display: none;
+}
+.table--stacked tbody td {
+  text-align: right;
+}
+.table--stacked tbody td:before {
+  content: attr(data-header);
+  float: left;
+  font-weight: bold;
+}
+.table--stacked tr {
+  display: block;
+}
+.table--stacked td {
+  display: block;
 }
 
 /*------------------------------------*\
@@ -2694,7 +2786,10 @@ a:hover, a:focus {
   font-size: 1em;
 }
 
-.text > p, .text > ul, .text > ol {
+.text ul, .text ol, .text dl {
+  font-size: initial;
+}
+.text li, .text dt, .text dd, .text p {
   font-size: 0.875em;
 }
 
