@@ -2,29 +2,32 @@
 //         #ALERT
 // \*------------------------------------*/
 
-$styles-alert                        : true;
+$styles-alert                       : true;
+$styles-alert-inline                : true !default;
+$styles-alert-top                   : true !default;
+
 
 // base
-$alert-padding                       : em(12) !default;
-$alert-border                        : 1px solid !default;
-$alert-margin                        : 0 0 rem(16) !default;
+$alert-padding                      : em(12) !default;
+$alert-border                       : 1px solid !default;
+$alert-margin                       : 0 0 rem(16) !default;
 
 // types
-$alert-success-bg                    : white !default;
-$alert-success-color                 : #67B646 !default;
-$alert-success-border-color          : #67B646 !default;
+$alert-success-bg                   : white !default;
+$alert-success-color                : #67B646 !default;
+$alert-success-border-color         : #67B646 !default;
 
-$alert-info-bg                       : white !default;
-$alert-info-color                    : #4183C4 !default;
-$alert-info-border-color             : #4183C4 !default;
+$alert-info-bg                      : white !default;
+$alert-info-color                   : #4183C4 !default;
+$alert-info-border-color            : #4183C4 !default;
 
-$alert-warning-bg                    : white !default;
-$alert-warning-color                 : #F93 !default;
-$alert-warning-border-color          : #F93 !default;
+$alert-warning-bg                   : white !default;
+$alert-warning-color                : #F93 !default;
+$alert-warning-border-color         : #F93 !default;
 
-$alert-error-bg                      : white !default;
-$alert-error-color                   : #BD2C00 !default;
-$alert-error-border-color            : #BD2C00 !default;
+$alert-error-bg                     : white !default;
+$alert-error-color                  : #BD2C00 !default;
+$alert-error-border-color           : #BD2C00 !default;
 
 
 
@@ -34,11 +37,12 @@ $alert-error-border-color            : #BD2C00 !default;
 //         #BANNER
 // \*------------------------------------*/
 
-$styles-banner                       : true;
+$styles-banner                      : true;
+$styles-banner-stacked              : true !default;
 
 // base
-$banner-item-padding                 : 0 1% !default;
-$banner-align                        : center !default;
+$banner-item-padding                : 0 1% !default;
+$banner-align                       : center !default;
 
 
 
@@ -48,11 +52,11 @@ $banner-align                        : center !default;
 //         #BREADCRUMB
 // \*------------------------------------*/
 
-$styles-breadcrumb                   : true;
+$styles-breadcrumb                  : true;
 
 // base
-$breadcrumb-item-margin              : rem(4);
-$breadcrumb-item-icon                : ' » ';
+$breadcrumb-item-margin             : rem(4);
+$breadcrumb-item-icon               : ' » ';
 
 
 
@@ -62,46 +66,47 @@ $breadcrumb-item-icon                : ' » ';
 //         #BUTTON
 // \*------------------------------------*/
 
-$styles-button                       : true;
+$styles-button                      : true;
+$styles-button-fluid                : true !default;
 
 // base
-$button-font-size                    : em(15) !default;
-$button-font-weight                  : normal !default;
-$button-events                       : true !default;
-$button-padding                      : rem(10) rem(18) !default;
-$button-transition                   : background-color $transition-duration $transition-timing !default;
-$button-radius                       : 4px !default;
-$button-border                       : none !default;
-$button-text-decoration              : none !default;
-$button-group-lateral-margin         : rem(6) !default;
-$button-group-vertical-margin        : rem(6) !default;
+$button-font-size                   : em(15) !default;
+$button-font-weight                 : normal !default;
+$button-events                      : true !default;
+$button-padding                     : rem(10) rem(18) !default;
+$button-transition                  : background-color $transition-duration $transition-timing !default;
+$button-radius                      : 4px !default;
+$button-border                      : none !default;
+$button-text-decoration             : none !default;
+$button-group-lateral-margin        : rem(6) !default;
+$button-group-vertical-margin       : rem(6) !default;
 
 // types
-$button-primary-bg                   : $brand-primary !default;
-$button-primary-color                : $brand-primary-text !default;
-$button-primary-border               : $button-border !default;
-$button-primary-border-color         : $brand-primary !default;
+$button-primary-bg                  : $brand-primary !default;
+$button-primary-color               : $brand-primary-text !default;
+$button-primary-border              : $button-border !default;
+$button-primary-border-color        : $brand-primary !default;
 
-$button-secondary-bg                 : $brand-secondary !default;
-$button-secondary-color              : $brand-secondary-text !default;
-$button-secondary-border             : $button-border !default;
-$button-secondary-border-color       : $brand-secondary !default;
+$button-secondary-bg                : $brand-secondary !default;
+$button-secondary-color             : $brand-secondary-text !default;
+$button-secondary-border            : $button-border !default;
+$button-secondary-border-color      : $brand-secondary !default;
 
-$button-disabled-bg                  : #eeeeee !default;
-$button-disabled-color               : #aaaaaa !default;
-$button-disabled-border              : 1px solid !default;
-$button-disabled-border-color        : #aaaaaa !default;
+$button-disabled-bg                 : #eeeeee !default;
+$button-disabled-color              : #aaaaaa !default;
+$button-disabled-border             : 1px solid !default;
+$button-disabled-border-color       : #aaaaaa !default;
 
 // events
-$button-primary-bg-hover             : lighten($button-primary-bg, 15%) !default;
-$button-primary-bg-active            : lighten($button-primary-bg, 25%) !default;
-$button-primary-color-hover          : $button-primary-color !default;
-$button-primary-border-color-hover   : none !default;
+$button-primary-bg-hover            : lighten($button-primary-bg, 15%) !default;
+$button-primary-bg-active           : lighten($button-primary-bg, 25%) !default;
+$button-primary-color-hover         : $button-primary-color !default;
+$button-primary-border-color-hover  : none !default;
 
-$button-secondary-bg-hover           : lighten($button-secondary-bg, 15%) !default;
-$button-secondary-bg-active          : lighten($button-secondary-bg, 25%) !default;
-$button-secondary-color-hover        : $button-primary-color !default;
-$button-secondary-border-color-hover : none !default;
+$button-secondary-bg-hover          : lighten($button-secondary-bg, 15%) !default;
+$button-secondary-bg-active         : lighten($button-secondary-bg, 25%) !default;
+$button-secondary-color-hover       : $button-primary-color !default;
+$button-secondary-border-color-hover: none !default;
 
 
 
@@ -111,28 +116,30 @@ $button-secondary-border-color-hover : none !default;
 //         #DROPDOWN
 // \*------------------------------------*/
 
-$styles-dropdown                     : true;
+$styles-dropdown                    : true;
+$styles-dropdown-fluid              : true !default;
+$styles-dropdown-stacked            : true !default;
 
 // base
-$dropdown-padding                    : rem(0) !default;
-$dropdown-font-size                  : em(14) !default;
-$dropdown-item-font-weight           : normal !default;
-$dropdown-item-padding               : 1em !default;
-$dropdown-transition                 : background-color $transition-duration $transition-timing !default;
-$dropdown-item-transition            : background-color $transition-duration $transition-timing !default;
+$dropdown-padding                   : rem(0) !default;
+$dropdown-font-size                 : em(14) !default;
+$dropdown-item-font-weight          : normal !default;
+$dropdown-item-padding              : 1em !default;
+$dropdown-transition                : background-color $transition-duration $transition-timing !default;
+$dropdown-item-transition           : background-color $transition-duration $transition-timing !default;
 
 // format
-$dropdown-bg-color                   : transparent !default;
-$dropdown-item-color                 : $brand-primary-text !default;
-$dropdown-item-bg-color              : $brand-primary !default;
-$dropdown-item-lead-bg-color         : darken($dropdown-item-bg-color, 15%) !default;
-$dropdown-item-selected-color        : $brand-secondary-text !default;
-$dropdown-item-selected-bg-color     : $brand-secondary !default;
+$dropdown-bg-color                  : transparent !default;
+$dropdown-item-color                : $brand-primary-text !default;
+$dropdown-item-bg-color             : $brand-primary !default;
+$dropdown-item-lead-bg-color        : darken($dropdown-item-bg-color, 15%) !default;
+$dropdown-item-selected-color       : $brand-secondary-text !default;
+$dropdown-item-selected-bg-color    : $brand-secondary !default;
 
 // events
-$dropdown-item-hover-bg-color        : darken($dropdown-item-bg-color, 10%) !default;
-$dropdown-item-active-bg-color       : lighten($dropdown-item-bg-color, 5%) !default;
-$dropdown-submenu-bg-color           : lighten($dropdown-item-hover-bg-color, 13%) !default;
+$dropdown-item-hover-bg-color       : darken($dropdown-item-bg-color, 10%) !default;
+$dropdown-item-active-bg-color      : lighten($dropdown-item-bg-color, 5%) !default;
+$dropdown-submenu-bg-color          : lighten($dropdown-item-hover-bg-color, 13%) !default;
 
 
 
@@ -142,37 +149,37 @@ $dropdown-submenu-bg-color           : lighten($dropdown-item-hover-bg-color, 13
 //         #FORM
 // \*------------------------------------*/
 
-$styles-form                         : true;
+$styles-form                        : true;
 
 // base
-$input-font-size                     : em(14) !default;
-$input-padding                       : rem(10) !default;
-$input-margin-bottom                 : rem(12) !default;
-$input-border-radius                 : 3px !default;
-$input-border-style                  : 1px solid !default;
+$input-font-size                    : em(14) !default;
+$input-padding                      : rem(10) !default;
+$input-margin-bottom                : rem(12) !default;
+$input-border-radius                : 3px !default;
+$input-border-style                 : 1px solid !default;
 
 // format
-$input-bg-color                      : #fdfdfd !default;
-$input-border-color                  : darken($brand-primary, 10%) !default;
-$input-color                         : $brand-primary !default;
-$input-border                        : $input-border-style $input-border-color !default;
+$input-bg-color                     : #fdfdfd !default;
+$input-border-color                 : darken($brand-primary, 10%) !default;
+$input-color                        : $brand-primary !default;
+$input-border                       : $input-border-style $input-border-color !default;
 
 // events
-$input-color-focus                   : darken($input-color, 10%) !default;
-$input-bg-color-focus                : darken($input-bg-color, 2%) !default;
-$input-border-color-focus            : darken($input-border-color, 10%) !default;
+$input-color-focus                  : darken($input-color, 10%) !default;
+$input-bg-color-focus               : darken($input-bg-color, 2%) !default;
+$input-border-color-focus           : darken($input-border-color, 10%) !default;
 
 // warnings
-$msg-font-size                       : em(12) !default;
-$msg-font-weight                     : bold !default;
-$msg-base-color                      : #dddddd !default;
+$msg-font-size                      : em(12) !default;
+$msg-font-weight                    : bold !default;
+$msg-base-color                     : #dddddd !default;
 
 // icons
-$input-icon-color                    : $brand-primary !default;
-$input-icon-position                 : right !default;
-$input-icon-width                    : em(32, $input-font-size) !default;
-$input-icon-height                   : em(32, $input-font-size) !default;
-$input-icon-padding-right            : em(40, $input-font-size) !default;
+$input-icon-color                   : $brand-primary !default;
+$input-icon-position                : right !default;
+$input-icon-width                   : em(32, $input-font-size) !default;
+$input-icon-height                  : em(32, $input-font-size) !default;
+$input-icon-padding-right           : em(40, $input-font-size) !default;
 
 
 
@@ -182,17 +189,17 @@ $input-icon-padding-right            : em(40, $input-font-size) !default;
 //         #ICON
 // \*------------------------------------*/
 
-$styles-icon                         : true;
+$styles-icon                        : true;
 
 // colors
-$icon-color                          : white !default;
-$icon-color-variant                  : #333333 !default;
+$icon-color                         : white !default;
+$icon-color-variant                 : #333333 !default;
 
 // size
-$icon-size-svg                       : rem(28) !default;
+$icon-size-svg                      : rem(28) !default;
 
 // text
-$icon-text-padding                   : rem(30) !default;
+$icon-text-padding                  : rem(30) !default;
 
 
 
@@ -202,18 +209,18 @@ $icon-text-padding                   : rem(30) !default;
 //         #MODAL
 // \*------------------------------------*/
 
-$styles-modal                        : true;
-$modal-backdrop-bg                   : rgba(51, 51, 51, 0.75);
+$styles-modal                       : true;
+$modal-backdrop-bg                  : rgba(51, 51, 51, 0.75);
 
 // base
-$modal-position                      : center !default;
-$modal-max-width                     : 60% !default;
-$modal-dialog-padding                : rem(10) !default;
-$modal-inner-padding                 : rem(20) !default;
-$modal-content-border-radius         : initial !default;
+$modal-position                     : center !default;
+$modal-max-width                    : 60% !default;
+$modal-dialog-padding               : rem(10) !default;
+$modal-inner-padding                : rem(20) !default;
+$modal-content-border-radius        : initial !default;
 
 // format
-$modal-content-bg                    : white !default;
+$modal-content-bg                   : white !default;
 
 
 
@@ -223,30 +230,34 @@ $modal-content-bg                    : white !default;
 //         #NAVIGATION
 // \*------------------------------------*/
 
-$styles-navigation                   : true;
+$styles-navigation                  : true;
+$styles-navigation-bar              : true !default;
+$styles-navigation-fluid            : true !default;
+$styles-navigation-inline           : true !default;
+$styles-navigation-stacked          : true !default;
 
 // base
-$nav-fixed-x                         : (top, 0);
-$nav-fixed-y                         : (left, 0);
-$nav-font-size                       : em(14) !default;
-$nav-item-font-weight                : normal !default;
-$nav-padding                         : rem(0) !default;
-$nav-item-padding                    : rem(16) !default;
-$nav-menu-transition                 : background-color $transition-duration $transition-timing !default;
-$nav-submenu-transition              : background-color $transition-duration $transition-timing !default;
+$nav-fixed-x                        : (top, 0);
+$nav-fixed-y                        : (left, 0);
+$nav-font-size                      : em(14) !default;
+$nav-item-font-weight               : normal !default;
+$nav-padding                        : rem(0) !default;
+$nav-item-padding                   : rem(16) !default;
+$nav-menu-transition                : background-color $transition-duration $transition-timing !default;
+$nav-submenu-transition             : background-color $transition-duration $transition-timing !default;
 
 // format
-$nav-bg-color                        : transparent !default;
-$nav-item-color                      : $brand-primary-text !default;
-$nav-item-bg-color                   : $brand-primary !default;
-$nav-item-lead-bg-color              : darken($nav-item-bg-color, 15%) !default;
-$nav-item-selected-color             : $brand-secondary-text !default;
-$nav-item-selected-bg-color          : $brand-secondary !default;
+$nav-bg-color                       : transparent !default;
+$nav-item-color                     : $brand-primary-text !default;
+$nav-item-bg-color                  : $brand-primary !default;
+$nav-item-lead-bg-color             : darken($nav-item-bg-color, 15%) !default;
+$nav-item-selected-color            : $brand-secondary-text !default;
+$nav-item-selected-bg-color         : $brand-secondary !default;
 
 // events
-$nav-item-hover-bg-color             : darken($nav-item-bg-color, 10%) !default;
-$nav-item-active-bg-color            : lighten($nav-item-bg-color, 5%) !default;
-$nav-submenu-bg-color                : lighten($nav-item-hover-bg-color, 13%) !default;
+$nav-item-hover-bg-color            : darken($nav-item-bg-color, 10%) !default;
+$nav-item-active-bg-color           : lighten($nav-item-bg-color, 5%) !default;
+$nav-submenu-bg-color               : lighten($nav-item-hover-bg-color, 13%) !default;
 
 
 
@@ -256,24 +267,26 @@ $nav-submenu-bg-color                : lighten($nav-item-hover-bg-color, 13%) !d
 //         #PAGINATOR
 // \*------------------------------------*/
 
-$styles-paginator                    : true;
+$styles-paginator                   : true;
+$styles-paginator-bar               : true !default;
+$styles-paginator-inline            : true !default;
 
-$paginator-padding                   : rem(0) !default;
-$paginator-font-size                 : em(14) !default;
-$paginator-item-font-weight          : normal !default;
-$paginator-item-padding              : rem(16) !default;
-$paginator-transition                : background-color $transition-duration $transition-timing !default;
+$paginator-padding                  : rem(0) !default;
+$paginator-font-size                : em(14) !default;
+$paginator-item-font-weight         : normal !default;
+$paginator-item-padding             : rem(16) !default;
+$paginator-transition               : background-color $transition-duration $transition-timing !default;
 
 // format
-$paginator-bg-color                  : transparent !default;
-$paginator-item-color                : $brand-primary-text !default;
-$paginator-item-bg-color             : $brand-primary !default;
-$paginator-item-selected-color       : $brand-secondary-text !default;
-$paginator-item-selected-bg-color    : $brand-secondary !default;
+$paginator-bg-color                 : transparent !default;
+$paginator-item-color               : $brand-primary-text !default;
+$paginator-item-bg-color            : $brand-primary !default;
+$paginator-item-selected-color      : $brand-secondary-text !default;
+$paginator-item-selected-bg-color   : $brand-secondary !default;
 
 // events
-$paginator-item-hover-bg-color       : darken($paginator-item-bg-color, 10%) !default;
-$paginator-item-active-bg-color      : lighten($paginator-item-bg-color, 5%) !default;
+$paginator-item-hover-bg-color      : darken($paginator-item-bg-color, 10%) !default;
+$paginator-item-active-bg-color     : lighten($paginator-item-bg-color, 5%) !default;
 
 
 
@@ -283,28 +296,28 @@ $paginator-item-active-bg-color      : lighten($paginator-item-bg-color, 5%) !de
 //         #PANEL
 // \*------------------------------------*/
 
-$styles-panel                        : true;
+$styles-panel                       : true;
 
 // general
-$panel-border                        : 1px solid #E2E2E2 !default;
-$panel-dropdown-close-color          : white !default;
+$panel-border                       : 1px solid #E2E2E2 !default;
+$panel-dropdown-close-color         : white !default;
 
 // title
-$panel-title-font-size               : em(16) !default;
-$panel-title-padding                 : rem(12) !default;
-$panel-title-color                   : white;
-$panel-title-bg-color                : $brand-primary;
-$panel-title-transform               : uppercase;
+$panel-title-font-size              : em(16) !default;
+$panel-title-padding                : rem(12) !default;
+$panel-title-color                  : white;
+$panel-title-bg-color               : $brand-primary;
+$panel-title-transform              : uppercase;
 
 // content
-$panel-content-font-size             : em(14) !default;
-$panel-content-padding               : rem(12) !default;
-$panel-content-color                 : $brand-primary !default;
-$panel-content-bg-color              : white !default;
+$panel-content-font-size            : em(14) !default;
+$panel-content-padding              : rem(12) !default;
+$panel-content-color                : $brand-primary !default;
+$panel-content-bg-color             : white !default;
 
 // dropdown
-$panel-dropdown-close-rotate         : 90deg !default;
-$panel-dropdown-close-rotate-hover   : -90deg !default;
+$panel-dropdown-close-rotate        : 90deg !default;
+$panel-dropdown-close-rotate-hover  : -90deg !default;
 
 
 
@@ -314,16 +327,16 @@ $panel-dropdown-close-rotate-hover   : -90deg !default;
 //         #SPINNER
 // \*------------------------------------*/
 
-$styles-spinner                      : true;
+$styles-spinner                     : true;
 
 // base
-$spinner-font-size                   : em(10);
-$spinner-size                        : em(60);
-$spinner-speed                       : 0.6s;
+$spinner-font-size                  : em(10);
+$spinner-size                       : em(60);
+$spinner-speed                      : 0.6s;
 
 // format
-$spinner-color                       : $brand-primary !default;
-$spinner-backdrop-bg                 : rgba(255, 255, 255, 0.75);
+$spinner-color                      : $brand-primary !default;
+$spinner-backdrop-bg                : rgba(255, 255, 255, 0.75);
 
 
 
@@ -333,31 +346,35 @@ $spinner-backdrop-bg                 : rgba(255, 255, 255, 0.75);
 //         #TAB
 // \*------------------------------------*/
 
-$styles-tab                          : true;
+$styles-tab                         : true;
+$styles-tab-bar                     : true !default;
+$styles-tab-inline                  : true !default;
+$styles-tab-reverse                 : true !default;
+$styles-tab-stacked                 : true !default;
 
 // base
-$tab-item-font-size                  : em(13) !default;
-$tab-item-padding                    : rem(16) !default;
-$tab-content-padding                 : rem(16) !default;
-$tab-content-font-size               : em(14) !default;
-$tab-content-width                   : 70% !default;
-$tab-block-width                     : 30% !default;
+$tab-item-font-size                 : em(13) !default;
+$tab-item-padding                   : rem(16) !default;
+$tab-content-padding                : rem(16) !default;
+$tab-content-font-size              : em(14) !default;
+$tab-content-width                  : 70% !default;
+$tab-block-width                    : 30% !default;
 
 // format
-$tab-transition                      : background-color $transition-duration $transition-timing !default;
-$tab-item-bg-color                   : $brand-primary !default;
-$tab-item-color                      : white !default;
-$tab-item-text-decoration            : none !default;
-$tab-item-lead-bg-color              : darken($tab-item-bg-color, 15%) !default;
-$tab-item-selected-color             : $brand-secondary-text !default;
-$tab-item-selected-bg-color          : $brand-secondary !default;
-$tab-content-border                  : 1px solid $tab-item-selected-bg-color !default;
-$tab-content-bg-color                : #fafafa !default;
+$tab-transition                     : background-color $transition-duration $transition-timing !default;
+$tab-item-bg-color                  : $brand-primary !default;
+$tab-item-color                     : white !default;
+$tab-item-text-decoration           : none !default;
+$tab-item-lead-bg-color             : darken($tab-item-bg-color, 15%) !default;
+$tab-item-selected-color            : $brand-secondary-text !default;
+$tab-item-selected-bg-color         : $brand-secondary !default;
+$tab-content-border                 : 1px solid $tab-item-selected-bg-color !default;
+$tab-content-bg-color               : #fafafa !default;
 
 //events
-$tab-item-hover-color                : $tab-item-color !default;
-$tab-item-hover-bg-color             : lighten($tab-item-bg-color, 15%) !default;
-$tab-item-active-bg-color            : lighten($tab-item-bg-color, 25%) !default;
+$tab-item-hover-color               : $tab-item-color !default;
+$tab-item-hover-bg-color            : lighten($tab-item-bg-color, 15%) !default;
+$tab-item-active-bg-color           : lighten($tab-item-bg-color, 25%) !default;
 
 
 
@@ -367,29 +384,30 @@ $tab-item-active-bg-color            : lighten($tab-item-bg-color, 25%) !default
 //         #TABLE
 // \*------------------------------------*/
 
-$styles-table                        : true;
+$styles-table                       : true;
+$styles-table-stacked               : true !default;
 
 // base
-$table-font-size                     : em(16) !default;
-$table-padding                       : rem(12) !default;
-$thead-align                         : left !default;
-$tbody-align                         : left !default;
-$tfoot-align                         : right !default;
-$tfoot-font-size                     : em(13) !default;
-$thead-font-weight                   : bold !default;
+$table-font-size                    : em(16) !default;
+$table-padding                      : rem(12) !default;
+$thead-align                        : left !default;
+$tbody-align                        : left !default;
+$tfoot-align                        : right !default;
+$tfoot-font-size                    : em(13) !default;
+$thead-font-weight                  : bold !default;
 
 // format
-$thead-color                         : $brand-primary-text !default;
-$thead-bg-color                      : $brand-primary !default;
-$tfoot-bg-color                      : #fafaf1;
-$tfoot-border-color                  : #F0F0C0;
-$table-even-bg-color                 : #fafaf1;
-$table-odd-bg-color                  : inherit;
+$thead-color                        : $brand-primary-text !default;
+$thead-bg-color                     : $brand-primary !default;
+$tfoot-bg-color                     : #fafaf1;
+$tfoot-border-color                 : #F0F0C0;
+$table-even-bg-color                : #fafaf1;
+$table-odd-bg-color                 : inherit;
 
 // events
-$table-hover-bg-color                : $brand-secondary !default;
-$table-hover-color                   : $brand-secondary-text !default;
-$table-hover-transition              : none;
+$table-hover-bg-color               : $brand-secondary !default;
+$table-hover-color                  : $brand-secondary-text !default;
+$table-hover-transition             : none;
 
 
 
@@ -399,20 +417,20 @@ $table-hover-transition              : none;
 //         #TEXT
 // \*------------------------------------*/
 
-$styles-text                         : true;
+$styles-text                        : true;
 
 // base
-$h1-size                             : 24;
-$h2-size                             : 22;
-$h3-size                             : 20;
-$h4-size                             : 19;
-$h5-size                             : 17;
-$h6-size                             : 16;
-$text-size-base                      : 14;
-$text-size-small                     : 12;
-$text-size-medium                    : 16;
-$text-size-large                     : 18;
+$h1-size                            : 24;
+$h2-size                            : 22;
+$h3-size                            : 20;
+$h4-size                            : 19;
+$h5-size                            : 17;
+$h6-size                            : 16;
+$text-size-base                     : 14;
+$text-size-small                    : 12;
+$text-size-medium                   : 16;
+$text-size-large                    : 18;
 
 // margin
-$text-margin                         : em(16);
-$text-style-list                     : disc;
+$text-margin                        : em(16);
+$text-style-list                    : disc;
