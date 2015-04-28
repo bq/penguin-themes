@@ -4,13 +4,7 @@
 
 .tab {}
 
-    .tab__block {
-
-        .tab--stacked & {
-            width: $tab-block-width;
-        }
-
-    }
+    .tab__block {}
 
         .tab__block__item {}
 
@@ -49,9 +43,17 @@
         padding: $tab-content-padding;
         background: $tab-content-bg-color;
         border: $tab-content-border;
+    }
 
-        .tab--stacked & {
-            width: $tab-content-width;
+    @if $styles-tab-stacked == true {
+
+        .tab__block,
+        .tab__content {
+
+            .tab--stacked & {
+                width: $tab-block-width;
+            }
+
         }
 
     }

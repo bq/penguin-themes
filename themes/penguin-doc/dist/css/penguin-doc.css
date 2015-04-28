@@ -2647,10 +2647,6 @@ a:hover, a:focus {
 /*------------------------------------*\
     #TAB-THEME
 \*------------------------------------*/
-.tab--stacked .tab__block {
-  width: 30%;
-}
-
 .tab__block__link {
   background-color: #303048;
   color: white;
@@ -2680,8 +2676,10 @@ a:hover, a:focus {
   background: #fafafa;
   border: 1px solid #fa8500;
 }
-.tab--stacked .tab__content {
-  width: 70%;
+
+.tab--stacked .tab__block, .tab--stacked
+.tab__content {
+  width: 30%;
 }
 
 /*------------------------------------*\

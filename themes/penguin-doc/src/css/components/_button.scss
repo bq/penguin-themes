@@ -17,8 +17,12 @@
         margin: 0 $button-group-lateral-margin;
     }
 
-    .btn-group--fluid & {
-        margin: $button-group-vertical-margin 0;
+    @if $styles-button-fluid == true {
+
+        .btn-group--fluid & {
+            margin: $button-group-vertical-margin 0;
+        }
+
     }
 
     &[disabled],
