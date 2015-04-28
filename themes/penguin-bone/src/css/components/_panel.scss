@@ -1,0 +1,31 @@
+/*------------------------------------*\
+    #PANEL-THEME
+\*------------------------------------*/
+
+.panel {
+
+    [data-rel="dropdown"] {
+        position: absolute;
+        top: $panel-title-padding;
+        right: $panel-title-padding;
+        // @include transition(all 0.2s  $transition-timing);
+        // @include rotate($panel-dropdown-close-rotate);
+    }
+
+    .dropdown--selected {
+
+        [data-rel="dropdown"] {
+            // @include rotate($panel-dropdown-close-rotate-hover);
+        }
+
+    }
+
+}
+
+    .panel__title {
+        font-size: $panel-title-font-size;
+    }
+
+    .panel__content {
+        font-size: $panel-content-font-size;
+    }

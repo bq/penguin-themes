@@ -1,0 +1,19 @@
+/*------------------------------------*\
+    #TEXT-THEME
+\*------------------------------------*/
+
+.text {
+
+    ul, ol {
+        margin-left: $text-margin;
+    }
+
+    ul {
+        list-style-type: $text-style-list;
+    }
+
+    ol {
+        list-style-type: decimal;
+    }
+
+}

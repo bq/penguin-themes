@@ -1,0 +1,21 @@
+/*------------------------------------*\
+    #TAB-THEME
+\*------------------------------------*/
+
+.tab {}
+
+    .tab__block {}
+
+        .tab__block__item {}
+
+            .tab__block__link {
+
+                @if $tab-transition != initial {
+                    // @include transition($tab-transition);
+                }
+
+            }
+
+    .tab__content {
+        font-size: $tab-content-font-size;
+    }
