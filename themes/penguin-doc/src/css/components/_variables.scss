@@ -13,21 +13,21 @@ $alert-border                       : 1px solid !default;
 $alert-margin                       : 0 0 rem(16) !default;
 
 // types
-$alert-success-bg                   : white !default;
-$alert-success-color                : #67B646 !default;
-$alert-success-border-color         : #67B646 !default;
+$alert-success-bg                    : white !default;
+$alert-success-color                 : $brand-success !default;
+$alert-success-border-color          : $brand-success !default;
 
-$alert-info-bg                      : white !default;
-$alert-info-color                   : #4183C4 !default;
-$alert-info-border-color            : #4183C4 !default;
+$alert-info-bg                       : white !default;
+$alert-info-color                    : $brand-info !default;
+$alert-info-border-color             : $brand-info !default;
 
-$alert-warning-bg                   : white !default;
-$alert-warning-color                : #F93 !default;
-$alert-warning-border-color         : #F93 !default;
+$alert-warning-bg                    : white !default;
+$alert-warning-color                 : $brand-warning !default;
+$alert-warning-border-color          : $brand-warning !default;
 
-$alert-error-bg                     : white !default;
-$alert-error-color                  : #BD2C00 !default;
-$alert-error-border-color           : #BD2C00 !default;
+$alert-error-bg                      : white !default;
+$alert-error-color                   : $brand-error !default;
+$alert-error-border-color            : $brand-error !default;
 
 
 
@@ -168,6 +168,11 @@ $input-border                       : $input-border-style $input-border-color !d
 $input-color-focus                  : darken($input-color, 10%) !default;
 $input-bg-color-focus               : darken($input-bg-color, 2%) !default;
 $input-border-color-focus           : darken($input-border-color, 10%) !default;
+
+// warn
+$input-warn-color                    : $brand-error !default;
+$input-warn-bg-color                 : white !default;
+$input-warn-border-color             : $input-warn-color !default;
 
 // warnings
 $msg-font-size                      : em(12) !default;

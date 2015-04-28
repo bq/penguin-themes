@@ -1,0 +1,72 @@
+/*------------------------------------*\
+    #FORM-THEME
+\*------------------------------------*/
+
+.form {
+
+    fieldset {
+
+        legend {
+            font-weight: bold;
+        }
+
+    }
+
+    .warn {
+        font-weight: bold;
+        font-style: normal;
+        font-size: $input-font-size - em(1, $input-font-size);
+    }
+
+}
+
+
+    .input {
+
+        @include inputs {
+            font-size: $input-font-size;
+            // background: $input-bg-color;
+            // border-radius: $input-border-radius;
+            // color: $input-color;
+            // border: $input-border;
+            // padding: $input-padding;
+            // @include transition (all 0.6s);
+
+            // &:focus {
+            //     color: $input-color-focus;
+            //     border-color: $input-border-color-focus;
+            //     background-color: $input-bg-color-focus;
+            // }
+        }
+
+    }
+
+    .input--icon {
+
+        @include inputs {
+
+            @if $input-icon-position == 'left' {
+                padding-left: $input-padding * 4;
+            }
+            @else if $input-icon-position == 'right' {
+                padding-right: $input-padding * 4;
+            }
+            @else {
+                @warn "Invalid value. You must specify 'left' or 'right'";
+            }
+
+        }
+
+        .icon {
+            @if $input-icon-position == 'left' {
+                left: $input-padding;
+            }
+            @else if $input-icon-position == 'right' {
+                right: $input-padding;
+            }
+            @else {
+                @warn "Invalid value. You must specify 'left' or 'right'";
+            }
+        }
+
+    }

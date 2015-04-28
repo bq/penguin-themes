@@ -1,0 +1,13 @@
+/*------------------------------------*\
+    #DROPDOWN-THEME
+\*------------------------------------*/
+
+.dropdown {}
+
+    .dropdown__menu__item {}
+
+        .dropdown__link,
+        .dropdown__menu__link {
+            font-size: $dropdown-font-size;
+            // @include transition($dropdown-transition);
+        }

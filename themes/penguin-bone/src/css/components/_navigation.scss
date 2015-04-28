@@ -1,0 +1,23 @@
+/*------------------------------------*\
+    #NAVIGATION-THEME
+\*------------------------------------*/
+
+.nav {}
+
+.nav--modifier {}
+
+    .nav__menu {}
+
+        .nav__menu__item {}
+
+            .nav__menu__link {
+                font-size: $nav-font-size;
+                font-weight: $nav-item-font-weight;
+            }
+
+                .nav__submenu {}
+
+                    .nav__submenu__item {
+                        font-size: $nav-font-size;
+                    }
+

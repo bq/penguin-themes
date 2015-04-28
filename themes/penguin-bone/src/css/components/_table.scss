@@ -1,0 +1,46 @@
+/*------------------------------------*\
+    #TABLE-THEME
+\*------------------------------------*/
+
+.table {
+    font-size: $table-font-size;
+
+    @include cells {
+        // padding: $table-padding;
+    }
+
+    thead {
+        @include cells {
+            // text-align: $thead-align;
+            // color: $thead-color;
+            // background-color: $thead-bg-color;
+            // font-weight: $thead-font-weight;
+        }
+    }
+
+    tbody {
+        @include cells {
+            // text-align: $tbody-align;
+        }
+
+        tr {
+            // @include transition($table-hover-transition);
+
+            &:hover, &:focus {
+                // color: $table-hover-color;
+                // background-color: $table-hover-bg-color;
+            }
+
+        }
+
+    }
+
+    tfoot {
+        @include cells {
+            // font-size: $tfoot-font-size;
+            // text-align: $tfoot-align;
+            // background-color: $tfoot-bg-color;
+            // border-top: 1px solid $tfoot-border-color;
+        }
+    }
+}

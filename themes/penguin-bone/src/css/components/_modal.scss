@@ -1,0 +1,13 @@
+/*------------------------------------*\
+    #MODAL-THEME
+\*------------------------------------*/
+
+.modal {}
+
+    .modal__header {
+    }
+
+        .modal__close {
+            right: $modal-inner-padding / 1.5;
+            top: $modal-inner-padding / 2;
+        }

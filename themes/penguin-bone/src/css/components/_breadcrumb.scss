@@ -1,0 +1,12 @@
+/*------------------------------------*\
+    #BREADCRUMB-THEME
+\*------------------------------------*/
+
+.breadcrumb {}
+    .breadcrumb__menu__item {
+
+        &:after {
+            content: $breadcrumb-item-icon;
+        }
+
+    }
