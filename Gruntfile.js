@@ -26,6 +26,21 @@ module.exports = function(grunt) {
                 }
             }
         },
+        usebanner: {
+            dist: {
+                options: {
+                    position: 'top',
+                    banner: '/**\n' +
+                        ' * <%= themeInfo.name %> v<%= themeInfo.version %> - Author: <%=themeInfo.author %>\n' +
+                        ' * =============================================================================\n' +
+                        ' * <%= themeInfo.description %>\n' +
+                        ' */\n'
+                },
+                files: {
+                    src: ['<%= themeUrl %>/dist/css/<%= theme %>.css', '<%= themeUrl %>/dist/css/<%= theme %>.min.css']
+                }
+            }
+        },
         watch: {
             css: {
                 files: ['<%= themeUrl %>/src/css/**/*.scss'],
@@ -100,8 +115,13 @@ module.exports = function(grunt) {
 
         evalTheme(theme);
 
+
         grunt.config.set('theme', theme);
-        grunt.task.run(['clean', 'sass', 'cssmin']);
+
+        var json = grunt.file.readJSON('themes/' + theme + '/theme.json');
+        grunt.config.set('themeInfo', json);
+
+        grunt.task.run(['clean', 'sass', 'cssmin', 'usebanner']);
 
     });
 

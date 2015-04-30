@@ -1,3 +1,9 @@
+/**
+ * Penguin Doc v1.0 - Author: josemanuel.guzman@bq.com
+ * =============================================================================
+ * Theme for our penguin's documentation website - http://penguin.docs.bqws.io/
+ */
+
 @charset "UTF-8";
 /*------------------------------------*\
     #RESET-STYLES-PENGUIN
@@ -1876,7 +1882,7 @@ a:hover, a:focus {
 .input:not(.input--checkbox):not(.input--radio) {
   display: block;
 }
-.form .input:not(.input--checkbox):not(.input--radio) input,
+.form .input:not(.input--checkbox):not(.input--radio) input:not([type="checkbox"]):not([type="radio"]),
 .form .input:not(.input--checkbox):not(.input--radio) select,
 .form .input:not(.input--checkbox):not(.input--radio) textarea {
   width: 100%;
@@ -1934,7 +1940,7 @@ a:hover, a:focus {
   border-color: #c60f13;
 }
 
-.input input,
+.input input:not([type="checkbox"]):not([type="radio"]),
 .input select,
 .input textarea {
   font-size: 0.875em;
@@ -1946,7 +1952,7 @@ a:hover, a:focus {
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
 }
-.input input:focus,
+.input input:not([type="checkbox"]):not([type="radio"]):focus,
 .input select:focus,
 .input textarea:focus {
   color: #1c1c29;
@@ -1959,7 +1965,7 @@ a:hover, a:focus {
   padding-bottom: 0;
 }
 
-.input--icon input,
+.input--icon input:not([type="checkbox"]):not([type="radio"]),
 .input--icon select,
 .input--icon textarea {
   padding-right: 2.5rem;
