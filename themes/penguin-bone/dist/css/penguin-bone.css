@@ -1,3 +1,9 @@
+/**
+ * Penguin Bone v1.0 - Author: javier.lopez@bq.com
+ * =============================================================================
+ * Simple scaffolding theme for creating your own penguin
+ */
+
 @charset "UTF-8";
 /*------------------------------------*\
     #RESET-STYLES-PENGUIN
@@ -1746,7 +1752,7 @@ a:hover, a:focus {
 .input:not(.input--checkbox):not(.input--radio) {
   display: block;
 }
-.form .input:not(.input--checkbox):not(.input--radio) input,
+.form .input:not(.input--checkbox):not(.input--radio) input:not([type="checkbox"]):not([type="radio"]),
 .form .input:not(.input--checkbox):not(.input--radio) select,
 .form .input:not(.input--checkbox):not(.input--radio) textarea {
   width: 100%;
@@ -1794,13 +1800,13 @@ a:hover, a:focus {
   font-size: -0.26786em;
 }
 
-.input input,
+.input input:not([type="checkbox"]):not([type="radio"]),
 .input select,
 .input textarea {
   font-size: 0.875em;
 }
 
-.input--icon input,
+.input--icon input:not([type="checkbox"]):not([type="radio"]),
 .input--icon select,
 .input--icon textarea {
   padding-right: 2.5rem;
