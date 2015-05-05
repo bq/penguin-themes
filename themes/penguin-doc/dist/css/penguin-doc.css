@@ -2625,11 +2625,9 @@ a:hover, a:focus {
  */
 .tab--reverse .tab__block {
   text-align: right;
-  left: 70%;
 }
 .tab--reverse .tab__content {
   clear: both;
-  left: -30%;
 }
 
 /**
@@ -2683,9 +2681,20 @@ a:hover, a:focus {
   border: 1px solid #fa8500;
 }
 
-.tab--stacked .tab__block, .tab--stacked
-.tab__content {
+.tab--reverse .tab__block {
+  left: 70%;
+}
+
+.tab--reverse .tab__content {
+  left: -30%;
+}
+
+.tab--stacked .tab__block {
   width: 30%;
+}
+
+.tab--stacked .tab__content {
+  width: 70%;
 }
 
 /*------------------------------------*\

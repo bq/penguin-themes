@@ -45,13 +45,40 @@
         border: $tab-content-border;
     }
 
+    @if $styles-tab-reverse == true {
+
+        .tab__block {
+
+            .tab--reverse & {
+                left: $tab-content-width;
+            }
+
+        }
+
+        .tab__content {
+
+            .tab--reverse & {
+                left: -$tab-block-width;
+            }
+
+        }
+
+    }
+
     @if $styles-tab-stacked == true {
 
-        .tab__block,
-        .tab__content {
+        .tab__block {
 
             .tab--stacked & {
                 width: $tab-block-width;
+            }
+
+        }
+
+        .tab__content {
+
+            .tab--stacked & {
+                width: $tab-content-width;
             }
 
         }
