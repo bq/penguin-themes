@@ -6,3 +6,4 @@ bower_components
 Gemfile.lock
 *.log
 .idea
+themes/index.html
