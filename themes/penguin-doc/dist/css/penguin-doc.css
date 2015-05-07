@@ -240,7 +240,7 @@ body {
   font-family: "Arial", Helvetica, Sans-serif;
   font-size: 1em;
   line-height: 1.375em;
-  color: #B5B1B1;
+  color: #333333;
   background-color: white;
   height: 100%;
 }
@@ -2159,7 +2159,6 @@ a:hover, a:focus {
 .nav--bar .nav__menu {
   display: table;
   width: 100%;
-  height: 100%;
   position: relative;
 }
 .nav--bar .nav__menu__item {
@@ -2183,7 +2182,6 @@ a:hover, a:focus {
  */
 .nav--fluid .nav__menu {
   display: table;
-  height: 100%;
   position: relative;
 }
 .nav--fluid .nav__menu__item {
@@ -2589,7 +2587,6 @@ a:hover, a:focus {
 .tab--bar .tab__block {
   display: table;
   width: 100%;
-  height: 100%;
 }
 .tab--bar .tab__text__item,
 .tab--bar .tab__block__item,

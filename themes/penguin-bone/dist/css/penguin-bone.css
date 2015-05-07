@@ -1977,7 +1977,6 @@ a:hover, a:focus {
 .nav--bar .nav__menu {
   display: table;
   width: 100%;
-  height: 100%;
   position: relative;
 }
 .nav--bar .nav__menu__item {
@@ -2001,7 +2000,6 @@ a:hover, a:focus {
  */
 .nav--fluid .nav__menu {
   display: table;
-  height: 100%;
   position: relative;
 }
 .nav--fluid .nav__menu__item {
@@ -2330,7 +2328,6 @@ a:hover, a:focus {
 .tab--bar .tab__block {
   display: table;
   width: 100%;
-  height: 100%;
 }
 .tab--bar .tab__text__item,
 .tab--bar .tab__block__item,
@@ -2366,11 +2363,9 @@ a:hover, a:focus {
  */
 .tab--reverse .tab__block {
   text-align: right;
-  left: 70%;
 }
 .tab--reverse .tab__content {
   clear: both;
-  left: -30%;
 }
 
 /**

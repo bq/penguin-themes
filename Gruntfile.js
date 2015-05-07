@@ -61,6 +61,24 @@ module.exports = function(grunt) {
                 }]
             }
         },
+        browserSync: {
+            dist: {
+                options: {
+                    open: true,
+                    port: 9000,
+                    watchTask: true,
+                    server: {
+                        baseDir: "themes/"
+                    }
+                },
+                bsFiles: {
+                    src: [
+                        "<%= themeUrl %>/dist/css/*.css",
+                        "themes/index.html"
+                    ]
+                }
+            }
+        },
         bump: {
             options: {
                 files: ['bower.json'],
@@ -108,7 +126,7 @@ module.exports = function(grunt) {
         evalTheme(theme);
 
         grunt.config.set('theme', theme);
-        grunt.task.run(['clean', 'sass', 'watch']);
+        grunt.task.run(['clean', 'sass', 'browserSync', 'watch']);
     });
 
     grunt.registerTask('build-theme', function(theme) {
