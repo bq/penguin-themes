@@ -1,0 +1,33 @@
+/*------------------------------------*\
+    #MODAL-THEME
+\*------------------------------------*/
+
+.modal {}
+
+    .modal__dialog {
+        padding: $modal-dialog-padding;
+    }
+
+        .modal__dialog__content {
+            background-color: $modal-content-bg;
+            border-radius: $modal-content-border-radius;
+            box-shadow: 0 3px 9px rgba(0,0,0,.5);
+            max-width: $modal-max-width;
+        }
+
+    .modal__header {
+        padding: $modal-inner-padding;
+    }
+
+        .modal__close {
+            right: $modal-inner-padding / 1.5;
+            top: $modal-inner-padding / 2;
+        }
+
+    .modal__body {
+        padding: $modal-inner-padding;
+    }
+
+    .modal__footer {
+        padding: $modal-inner-padding - rem(1) $modal-inner-padding $modal-inner-padding;
+    }

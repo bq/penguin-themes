@@ -1,0 +1,46 @@
+/*------------------------------------*\
+    #BUTTONS-THEME
+\*------------------------------------*/
+
+.btn {
+    font-size: $button-font-size;
+    font-weight: $button-font-weight;
+    border-radius: $button-radius;
+    border: $button-border;
+    padding: $button-padding;
+
+    @if $button-transition != initial {
+        @include transition($button-transition);
+    }
+
+    .btn-group & {
+        margin: 0 $button-group-lateral-margin;
+    }
+
+    @if $styles-button-fluid == true {
+
+        .btn-group--fluid & {
+            margin: $button-group-vertical-margin 0;
+        }
+
+    }
+
+    &[disabled],
+    &[readonly] {
+        @include button($button-disabled-color, $button-disabled-bg, $button-disabled-border, none);
+    }
+}
+
+.btn--primary {
+    @include button($button-primary-color, $button-primary-bg, $button-primary-border, $button-primary-border-color);
+    @include button-events($button-primary-color-hover, $button-primary-bg-hover, $button-primary-border-color-hover, $button-primary-bg-active);
+}
+
+.btn--secondary {
+    @include button($button-secondary-color, $button-secondary-bg, $button-secondary-border, $button-secondary-border-color);
+    @include button-events($button-secondary-color-hover, $button-secondary-bg-hover, $button-secondary-border-color-hover, $button-secondary-bg-active);
+}
+
+.btn--disabled {
+    @include button($button-disabled-color, $button-disabled-bg, $button-disabled-border, $button-disabled-border-color);
+}
