@@ -1,0 +1,31 @@
+/*------------------------------------*\
+    #TEXT-THEME
+\*------------------------------------*/
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: $text-margin;
+}
+
+.text {
+
+    p, ul, ol {
+        margin-bottom: $text-margin;
+    }
+
+    ul, ol {
+        margin-left: $text-margin;
+
+        ul, ol {
+            margin-bottom: 0;
+        }
+    }
+
+    ul {
+        list-style-type: $text-style-list;
+    }
+
+    ol {
+        list-style-type: decimal;
+    }
+
+}

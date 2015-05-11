@@ -1,0 +1,418 @@
+// /*------------------------------------*\
+//         #ALERT
+// \*------------------------------------*/
+
+$styles-alert                       : true;
+
+// base
+$alert-padding                      : em(12) !default;
+$alert-border                       : 1px solid !default;
+$alert-margin                       : 0 0 rem(16) !default;
+
+// types
+$alert-success-bg                   : palette(gray-elephant) !default;
+$alert-success-color                : $brand-secondary-text  !default;
+$alert-success-border-color         : palette(gray-elephant, dark) !default;
+
+$alert-info-bg                      : palette(gray-elephant) !default;
+$alert-info-color                   : $brand-secondary-text  !default;
+$alert-info-border-color            : palette(gray-elephant, dark) !default;
+
+$alert-warning-bg                   : palette(gray-elephant) !default;
+$alert-warning-color                : $brand-secondary-text  !default;
+$alert-warning-border-color         : palette(gray-elephant, dark) !default;
+
+$alert-error-bg                     : palette(gray-elephant) !default;
+$alert-error-color                  : $brand-secondary-text  !default;
+$alert-error-border-color           : palette(gray-elephant, dark) !default;
+
+
+
+
+
+// /*------------------------------------*\
+//         #BANNER
+// \*------------------------------------*/
+
+$styles-banner                      : false;
+
+// base
+$banner-item-padding                : 0 1% !default;
+$banner-align                       : center !default;
+
+
+
+
+
+// /*------------------------------------*\
+//         #BREADCRUMB
+// \*------------------------------------*/
+
+$styles-breadcrumb                  : true;
+
+// base
+$breadcrumb-item-margin             : rem(4);
+$breadcrumb-item-icon               : ' » ';
+
+
+
+
+
+// /*------------------------------------*\
+//         #BUTTON
+// \*------------------------------------*/
+
+$styles-button                      : true;
+
+// base
+$button-font-size                   : em(15) !default;
+$button-font-weight                 : normal !default;
+$button-events                      : true !default;
+$button-padding                     : rem(10) rem(18) !default;
+$button-transition                  : background-color $transition-duration $transition-timing !default;
+$button-radius                      : 0 !default;
+$button-border                      : 1px solid !default;
+$button-text-decoration             : none !default;
+$button-group-lateral-margin        : rem(6) !default;
+$button-group-vertical-margin       : rem(6) !default;
+
+// types
+$button-primary-bg                  : palette(gray-titanium)!default;
+$button-primary-color               : $brand-primary-text !default;
+$button-primary-border              : $button-border !default;
+$button-primary-border-color        : palette(gray-titanium, dark)!default;
+
+$button-secondary-bg                : palette(gray-elephant) !default;
+$button-secondary-color             : $brand-secondary-text !default;
+$button-secondary-border            : 1px solid !default;
+$button-secondary-border-color      : palette(gray-elephant, dark) !default;
+
+$button-disabled-bg                 : palette(gray-elephant, light) !default;
+$button-disabled-color              : #aaaaaa !default;
+$button-disabled-border             : $button-border   !default;
+$button-disabled-border-color       : palette(gray-elephant) !default;
+
+// events
+$button-primary-bg-hover            : palette(gray-titanium, light) !default;
+$button-primary-bg-active           : palette(gray-titanium, light) !default;
+$button-primary-color-hover         : $button-primary-color !default;
+$button-primary-border-color-hover  : none !default;
+
+$button-secondary-bg-hover          : palette(gray-elephant, light) !default;
+$button-secondary-bg-active         : palette(gray-elephant, light) !default !default;
+$button-secondary-color-hover       : none !default;
+$button-secondary-border-color-hover: none !default;
+
+
+
+
+
+// /*------------------------------------*\
+//         #DROPDOWN
+// \*------------------------------------*/
+
+$styles-dropdown                    : true;
+
+// base
+$dropdown-padding                   : rem(0) !default;
+$dropdown-font-size                 : em(14) !default;
+$dropdown-item-font-weight          : normal !default;
+$dropdown-item-padding              : 1em !default;
+$dropdown-transition                : background-color $transition-duration $transition-timing !default;
+$dropdown-item-transition           : background-color $transition-duration $transition-timing !default;
+
+// format
+$dropdown-bg-color                  : white !default;
+$dropdown-item-color                : $brand-secondary-text !default;
+$dropdown-item-bg-color             : palette(gray-elephant) !default;
+$dropdown-item-lead-bg-color        : darken($dropdown-item-bg-color, 15%) !default;
+$dropdown-item-selected-color       : white !default;
+$dropdown-item-selected-bg-color    : palette(gray-titanium)!default;
+
+// events
+$dropdown-item-hover-bg-color       : palette(gray-elephant, dark) !default;
+$dropdown-item-active-bg-color      : palette(gray-elephant, light) !default;
+$dropdown-submenu-bg-color          : palette(gray-elephant, light) !default;
+
+
+
+
+
+// /*------------------------------------*\
+//         #FORM
+// \*------------------------------------*/
+
+$styles-form                        : true;
+
+// base
+$input-font-size                    : em(14) !default;
+$input-padding                      : rem(10) !default;
+$input-margin-bottom                : rem(12) !default;
+$input-border-radius                : 3px !default;
+$input-border-style                 : 1px solid !default;
+
+// format
+$input-bg-color                     : white !default;
+$input-border-color                 : palette(gray-elephant, dark) !default;
+$input-color                        : $brand-secondary-text !default;
+$input-border                       : $input-border-style $input-border-color !default;
+
+// events
+$input-color-focus                  : $body-color !default;
+$input-bg-color-focus               : palette(gray-elephant, light) !default;
+$input-border-color-focus           : palette(gray-titanium, light) !default;
+
+// warnings
+$msg-font-size                      : em(12) !default;
+$msg-font-weight                    : bold !default;
+$msg-base-color                     : #dddddd !default;
+
+// icons
+$input-icon-color                   : palette(gray-titanium)!default;
+$input-icon-position                : right !default;
+$input-icon-width                   : em(32, $input-font-size) !default;
+$input-icon-height                  : em(32, $input-font-size) !default;
+$input-icon-padding-right           : em(40, $input-font-size) !default;
+
+
+
+
+
+// /*------------------------------------*\
+//         #ICON
+// \*------------------------------------*/
+
+$styles-icon                        : true;
+
+// colors
+$icon-color                         : $brand-primary-text !default;
+$icon-color-variant                 : $brand-secondary-text !default;
+
+// size
+$icon-size-svg                      : rem(28) !default;
+
+// text
+$icon-text-padding                  : rem(30) !default;
+
+
+
+
+
+// /*------------------------------------*\
+//         #MODAL
+// \*------------------------------------*/
+
+$styles-modal                       : true;
+$modal-backdrop-bg                  : rgba(51, 51, 51, 0.75);
+
+// base
+$modal-position                     : center !default;
+$modal-max-width                    : 60% !default;
+$modal-dialog-padding               : rem(10) !default;
+$modal-inner-padding                : rem(20) !default;
+$modal-content-border-radius        : initial !default;
+
+// format
+$modal-content-bg                   : white !default;
+
+
+
+
+
+// /*------------------------------------*\
+//         #NAVIGATION
+// \*------------------------------------*/
+
+$styles-navigation                  : true;
+
+// base
+$nav-fixed-x                        : (top, 0);
+$nav-fixed-y                        : (left, 0);
+$nav-font-size                      : em(14) !default;
+$nav-item-font-weight               : normal !default;
+$nav-padding                        : rem(0) !default;
+$nav-item-padding                   : rem(16) !default;
+$nav-menu-transition                : background-color $transition-duration $transition-timing !default;
+$nav-submenu-transition             : background-color $transition-duration $transition-timing !default;
+
+// format
+$nav-bg-color                       : transparent !default;
+$nav-item-color                     : $brand-primary-text !default;
+$nav-item-bg-color                  : palette(gray-titanium)!default;
+$nav-item-lead-bg-color             : palette(gray-titanium, dark)!default;
+$nav-item-selected-color            : $brand-secondary-text !default;
+$nav-item-selected-bg-color         : palette(gray-elephant)!default;
+
+// events
+$nav-item-hover-bg-color            : palette(gray-titanium, dark)!default;
+$nav-item-active-bg-color           : palette(gray-titanium, light)!default;
+$nav-submenu-bg-color               : palette(gray-titanium, light)!default;
+
+
+
+
+
+// /*------------------------------------*\
+//         #PAGINATOR
+// \*------------------------------------*/
+
+$styles-paginator                   : true;
+
+$paginator-padding                  : rem(0) !default;
+$paginator-font-size                : em(14) !default;
+$paginator-item-font-weight         : normal !default;
+$paginator-item-padding             : rem(16) !default;
+$paginator-transition               : background-color $transition-duration $transition-timing !default;
+
+// format
+$paginator-bg-color                 : transparent !default;
+$paginator-item-color               : $brand-primary-text !default;
+$paginator-item-bg-color            : palette(gray-titanium)!default;
+$paginator-item-selected-color      : $brand-secondary-text !default;
+$paginator-item-selected-bg-color   : palette(gray-elephant) !default;
+
+// events
+$paginator-item-hover-bg-color      : palette(gray-titanium, dark)!default;
+$paginator-item-active-bg-color     : palette(gray-titanium, dark) !default;
+
+
+
+
+
+// /*------------------------------------*\
+//         #PANEL
+// \*------------------------------------*/
+
+$styles-panel                       : true;
+
+// general
+$panel-border                       : 1px solid #E2E2E2 !default;
+$panel-dropdown-close-color         : $icon-color !default;
+
+// title
+$panel-title-font-size              : em(16) !default;
+$panel-title-padding                : rem(12) !default;
+$panel-title-color                  : $brand-primary-text !default;
+$panel-title-bg-color               : palette(gray-titanium) !default;
+$panel-title-transform              : uppercase !default;
+
+// content
+$panel-content-font-size            : em(14) !default;
+$panel-content-padding              : rem(12) !default;
+$panel-content-color                : palette(gray-titanium)!default;
+$panel-content-bg-color             : white !default;
+
+// dropdown
+$panel-dropdown-close-rotate        : 90deg !default;
+$panel-dropdown-close-rotate-hover  : -90deg !default;
+
+
+
+
+
+// /*------------------------------------*\
+//         #SPINNER
+// \*------------------------------------*/
+
+$styles-spinner                     : true;
+
+// base
+$spinner-font-size                  : em(10);
+$spinner-size                       : em(60);
+$spinner-speed                      : 0.6s;
+
+// format
+$spinner-color                      : palette(gray-titanium)!default;
+$spinner-backdrop-bg                : rgba(255, 255, 255, 0.75);
+
+
+
+
+
+// /*------------------------------------*\
+//         #TAB
+// \*------------------------------------*/
+
+$styles-tab                         : true;
+
+// base
+$tab-item-font-size                 : em(13) !default;
+$tab-item-padding                   : rem(16) !default;
+$tab-content-padding                : rem(16) !default;
+$tab-content-font-size              : em(14) !default;
+$tab-content-width                  : 70% !default;
+$tab-block-width                    : 30% !default;
+
+// format
+$tab-transition                     : background-color $transition-duration $transition-timing !default;
+$tab-item-bg-color                  : palette(gray-titanium)!default;
+$tab-item-color                     : $brand-primary-text !default;
+$tab-item-text-decoration           : none !default;
+$tab-item-lead-bg-color             : palette(gray-titanium, dark) !default;
+$tab-item-selected-color            : $brand-secondary-text !default;
+$tab-item-selected-bg-color         : $brand-secondary !default;
+$tab-content-border                 : 1px solid $tab-item-selected-bg-color !default;
+$tab-content-bg-color               : white !default;
+
+//events
+$tab-item-hover-color               : $tab-item-color !default;
+$tab-item-hover-bg-color            : palette(gray-titanium, dark) !default;
+$tab-item-active-bg-color           : palette(gray-titanium, light) !default;
+
+
+
+
+
+// /*------------------------------------*\
+//         #TABLE
+// \*------------------------------------*/
+
+$styles-table                       : true;
+
+// base
+$table-font-size                    : em(16) !default;
+$table-padding                      : rem(12) !default;
+$thead-align                        : left !default;
+$tbody-align                        : left !default;
+$tfoot-align                        : right !default;
+$tfoot-font-size                    : em(13) !default;
+$thead-font-weight                  : bold !default;
+
+// format
+$thead-color                        : $brand-primary-text !default;
+$thead-bg-color                     : palette(gray-titanium)!default;
+$tfoot-bg-color                     : palette(gray-elephant, light);
+$tfoot-border-color                 : palette(gray-elephant, dark);
+$table-even-bg-color                : palette(gray-elephant, light);
+$table-odd-bg-color                 : inherit;
+
+// events
+$table-hover-bg-color               : palette(gray-elephant, dark) !default;
+$table-hover-color                  : $body-color !default;
+$table-hover-transition             : none;
+
+
+
+
+
+// /*------------------------------------*\
+//         #TEXT
+// \*------------------------------------*/
+
+$styles-text                        : true;
+
+// base
+$h1-size                            : 24;
+$h2-size                            : 22;
+$h3-size                            : 20;
+$h4-size                            : 19;
+$h5-size                            : 17;
+$h6-size                            : 16;
+$text-size-base                     : 14;
+$text-size-small                    : 12;
+$text-size-medium                   : 16;
+$text-size-large                    : 18;
+
+// margin
+$text-margin                        : em(16);
+$text-style-list                    : disc;

@@ -1,0 +1,43 @@
+/*------------------------------------*\
+    #ALERT-THEME
+\*------------------------------------*/
+
+.alert {
+    margin: $alert-margin;
+}
+
+    .alert__content {
+        border: $alert-border;
+        padding: $alert-padding;
+        position: relative;
+
+        .alert--success & {
+            background-color: $alert-success-bg;
+            color: $alert-success-color;
+            border-color: $alert-success-border-color;
+        }
+
+        .alert--info & {
+            background-color: $alert-info-bg;
+            color: $alert-info-color;
+            border-color: $alert-info-border-color;
+        }
+
+        .alert--warning & {
+            background-color: $alert-warning-bg;
+            color: $alert-warning-color;
+            border-color: $alert-warning-border-color;
+        }
+
+        .alert--error & {
+            background-color: $alert-error-bg;
+            color: $alert-error-color;
+            border-color: $alert-error-border-color;
+        }
+
+    }
+
+    .alert__close {
+        @include place-center;
+        right: $alert-padding;
+    }

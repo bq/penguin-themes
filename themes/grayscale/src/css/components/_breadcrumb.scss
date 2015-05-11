@@ -1,0 +1,14 @@
+/*------------------------------------*\
+    #BREADCRUMB-THEME
+\*------------------------------------*/
+
+.breadcrumb {}
+    .breadcrumb__menu__item {
+        margin: $breadcrumb-item-margin;
+
+        &:after {
+            content: $breadcrumb-item-icon;
+            margin-left: $breadcrumb-item-margin;
+        }
+
+    }
