@@ -1,0 +1,75 @@
+/*------------------------------------*\
+    #NAVIGATION-THEME
+\*------------------------------------*/
+
+.nav {}
+
+.nav--modifier {}
+
+    .nav__menu {}
+
+        .nav__menu__item {}
+
+            .nav__menu__link {
+                font-size: $nav-font-size;
+                font-weight: $nav-item-font-weight;
+                background-color: $nav-item-bg-color;
+                color: $nav-item-color;
+                padding: $nav-item-padding;
+                @include transition($nav-menu-transition);
+
+                &:hover, &:focus {
+                    background-color: $nav-item-hover-bg-color;
+                }
+
+                &:active {
+                    background-color: $nav-item-active-bg-color;
+                }
+
+                .nav__menu__item--selected & {
+                    color: $nav-item-selected-color;
+                    background-color: $nav-item-selected-bg-color;
+                    cursor: default;
+                    text-decoration: none;
+                }
+
+                .nav__menu__item--lead & {
+                    background-color: $nav-item-lead-bg-color;
+                }
+
+            }
+
+                .nav__submenu {}
+
+                    .nav__submenu__item {
+                        font-size: $nav-font-size;
+                        background-color: $nav-submenu-bg-color;
+                    }
+
+                        .nav__submenu__link {
+                            color: $nav-item-color;
+                            font-weight: $nav-item-font-weight;
+                            padding: $nav-item-padding;
+                            display: block;
+                            @include transition($nav-submenu-transition);
+
+                            &:hover, &:focus {
+                                background-color: $nav-item-hover-bg-color;
+                            }
+
+                            &:active {
+                                background-color: $nav-item-active-bg-color;
+                            }
+
+                            .nav__submenu__item--selected & {
+                                background-color: $nav-item-selected-bg-color;
+                                cursor: default;
+                                text-decoration: none;
+                            }
+
+                            .nav__submenu__item--lead & {
+                                background-color: $nav-item-lead-bg-color;
+                            }
+
+                        }
+

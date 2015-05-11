@@ -1,0 +1,78 @@
+// /*------------------------------------*\
+//     #GLOBAL VALUES
+// \*------------------------------------*/
+
+// Colors palette
+$gray-elephant-base : rgb(206,206,206);
+$gray-titanium-base: rgb(76, 76, 76);
+
+$palettes: (
+    gray-elephant: (
+        base : $gray-elephant-base,
+        light: lighten($gray-elephant-base, 10%),
+        dark : darken(($gray-elephant-base), 10%)
+    ),
+    gray-titanium: (
+        base : $gray-titanium-base,
+        light: lighten($gray-titanium-base, 10%),
+        dark : darken($gray-titanium-base, 10%)
+    )
+);
+
+
+// Brand colors
+// $brand-primary           : black;
+$brand-primary-text         : white;
+// $brand-secondary         : orange;
+$brand-secondary-text       : #666666;
+
+// Links
+// $link-color              : $brand-primary;
+// $link-hover-color        : false;
+// $link-active-color       : false;
+// $link-visited-color      : false;
+// $link-focus-color        : false;
+
+// Text
+// $selection-text-color-bg : $brand-secondary;
+// $selection-text-color    : invert($brand-primary);
+
+// Typography
+// $font-family-base        : "Arial", Helvetica, Sans-serif;
+// $font-size-small         : 13;
+// $font-size-base          : 16;
+// $font-size-medium        : 18;
+// $font-size-large         : 20;
+// $line-height-base        : 22;
+
+// Scaffolding
+// $body-font-size          : $font-size-base;
+// $body-bg                 : white;
+$body-color                 : #333333;
+
+// Print
+// $print-text-color        : $brand-primary-text;
+// $print-link-visited-color: $brand-primary ;
+// $print-border-color      : $brand-secondary;
+// $print-page-margin       : 0.5cm;
+
+// Breakpoints
+// $slicer-breakpoints      : 0		400px		600px	 	800px	 	1050px;
+// $slicer-breakpoint-names : 'a' 		'b' 		'c' 		'd' 		'e';
+
+// Grid
+// $grid-system             : true;
+// $grid-columns            : 12;
+// $grid-gutter             : 30;
+
+// Responsive
+// $responsive-visibility   : true;
+
+// Utils
+// $utils-classes           : true;
+
+// Animations
+// $animation-effects       : true;
+// $transition-duration     : 0.3s;
+// $transition-timing       : linear;
+// $transition-delay        : 0;
