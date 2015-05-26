@@ -43,3 +43,18 @@
     }
 
 }
+
+.nav__submenu,
+.dropdown__menu {
+    display: block!important;
+    pointer-events: none;
+    @include opacity(0);
+    @include translate(0, -10px);
+    @include transition(opacity, transform, .3s);
+
+    .transition & {
+        pointer-events: auto;
+        @include translate(0, 0);
+        @include opacity(1);
+    }
+}

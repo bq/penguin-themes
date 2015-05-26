@@ -1868,6 +1868,28 @@ a:hover, a:focus {
   color: white !important;
 }
 
+.nav__submenu,
+.dropdown__menu {
+  display: block !important;
+  pointer-events: none;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: translate(0, -10px);
+  -ms-transform: translate(0, -10px);
+  transform: translate(0, -10px);
+  -webkit-transition: opacity, transform, 0.3s;
+  transition: opacity, transform, 0.3s;
+}
+.transition .nav__submenu, .transition
+.dropdown__menu {
+  pointer-events: auto;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
 /*------------------------------------*\
     #FORM-PENGUIN
 \*------------------------------------*/
@@ -2098,6 +2120,19 @@ a:hover, a:focus {
 /*------------------------------------*\
     #MODAL-THEME
 \*------------------------------------*/
+.modal {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  pointer-events: none;
+  -webkit-transition: opacity, 0.3s;
+  transition: opacity, 0.3s;
+}
+.modal.transition {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  pointer-events: auto;
+}
+
 .modal__dialog {
   padding: 0.625rem;
 }
@@ -2491,6 +2526,19 @@ a:hover, a:focus {
 /*------------------------------------*\
     #SPINNER-THEME
 \*------------------------------------*/
+.spinner {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  pointer-events: none;
+  -webkit-transition: opacity, 0.3s;
+  transition: opacity, 0.3s;
+}
+.spinner.transition {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  pointer-events: auto;
+}
+
 /* :not(:required) hides this rule from IE9 and below */
 .spinner__element--circle:not(:required) {
   -webkit-animation: spinner 1500ms infinite linear;

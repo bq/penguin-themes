@@ -2,7 +2,17 @@
     #MODAL-THEME
 \*------------------------------------*/
 
-.modal {}
+.modal {
+    @include opacity(0);
+    pointer-events: none;
+    @include transition(opacity, .3s);
+
+    &.transition {
+        @include opacity(1);
+        pointer-events: auto;
+    }
+
+}
 
     .modal__dialog {
         padding: $modal-dialog-padding;

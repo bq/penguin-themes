@@ -2,6 +2,18 @@
     #SPINNER-THEME
 \*------------------------------------*/
 
+.spinner {
+    @include opacity(0);
+    pointer-events: none;
+    @include transition(opacity, .3s);
+
+    &.transition {
+        @include opacity(1);
+        pointer-events: auto;
+    }
+
+}
+
 /* :not(:required) hides this rule from IE9 and below */
 .spinner__element--circle:not(:required) {
     -webkit-animation: spinner 1500ms infinite linear;
