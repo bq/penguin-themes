@@ -42,6 +42,8 @@ html {
   line-height: 1;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 ol, ul {
@@ -69,7 +71,6 @@ q:before, q:after, blockquote:before, blockquote:after {
 
 a, button {
   -webkit-tap-highlight-color: transparent;
-  -webkit-tap-highlight-color: transparent;
 }
 
 a img {
@@ -96,6 +97,9 @@ button::-moz-focus-inner {
   padding: 0;
 }
 
+input {
+  -webkit-appearance: none;
+}
 input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
@@ -254,11 +258,6 @@ img {
 a {
   cursor: pointer;
   color: #272822;
-  text-decoration: none;
-  outline: none;
-}
-a:hover, a:focus {
-  text-decoration: underline;
 }
 
 /*------------------------------------*\
@@ -1770,7 +1769,6 @@ a:hover, a:focus {
 .btn--primary:hover, .btn--primary:focus {
   color: white;
   background-color: #4f4f76;
-  text-decoration: none;
 }
 .btn--primary:active {
   background-color: #636394;
@@ -1783,7 +1781,6 @@ a:hover, a:focus {
 .btn--secondary:hover, .btn--secondary:focus {
   color: white;
   background-color: #ffa947;
-  text-decoration: none;
 }
 .btn--secondary:active {
   background-color: #ffc17a;
@@ -1889,6 +1886,10 @@ a:hover, a:focus {
   opacity: 1;
   filter: alpha(opacity=100);
 }
+.dropdown--stacked .nav__submenu, .dropdown--stacked
+.dropdown__menu {
+  display: none !important;
+}
 
 /*------------------------------------*\
     #FORM-PENGUIN
@@ -1908,6 +1909,7 @@ a:hover, a:focus {
 .form .input:not(.input--checkbox):not(.input--radio) select,
 .form .input:not(.input--checkbox):not(.input--radio) textarea {
   width: 100%;
+  line-height: normal;
 }
 .form .input:not(.input--checkbox):not(.input--radio) input, .form .input:not(.input--checkbox):not(.input--radio) select {
   vertical-align: middle;
@@ -2106,6 +2108,7 @@ a:hover, a:focus {
 }
 
 .modal--backdrop {
+  background-color: rgba(51, 51, 51, 0.75);
   background-color: rgba(51, 51, 51, 0.75);
 }
 
@@ -2512,6 +2515,7 @@ a:hover, a:focus {
 }
 
 .spinner--backdrop {
+  background-color: rgba(255, 255, 255, 0.75);
   background-color: rgba(255, 255, 255, 0.75);
 }
 
